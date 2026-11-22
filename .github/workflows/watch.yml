@@ -1,0 +1,72 @@
+name: watch
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub cron is best-effort and drifts under load.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: "Seed mode: record all current jobs without notifying"
+        type: boolean
+        default: false
+
+concurrency:
+  # Never let a slow run overlap the next tick and double-send.
+  group: watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # Required to push the updated state file back to the state branch.
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out state branch
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: .state-branch
+
+      - name: Restore state file
+        run: |
+          mkdir -p state
+          cp .state-branch/state/seen.jsonl state/seen.jsonl 2>/dev/null || : > state/seen.jsonl
+          echo "known jobs: $(wc -l < state/seen.jsonl)"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Run watcher
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEED: ${{ github.event.inputs.seed }}
+        run: |
+          if [ "$SEED" = "true" ]; then
+            python -m jobfinder.watch --seed
+          else
+            python -m jobfinder.watch
+          fi
+
+      - name: Persist state
+        run: |
+          cp state/seen.jsonl .state-branch/state/seen.jsonl
+          cd .state-branch
+          git config user.name "jobfinder-bot"
+          git config user.email "jobfinder-bot@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add state/seen.jsonl
+            git commit -m "state: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin state
+          else
+            echo "no state change"
+          fi
