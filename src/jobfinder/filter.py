@@ -113,48 +113,59 @@ def role_family(title: str) -> str | None:
     return None
 
 
-MAX_YEARS = 3  # "moderate" setting: 4+ years is out of scope.
+MAX_YEARS = 1  # "0 years or student" — a 2+ year ask is not junior.
 
 _UNITS = r"(?:years?|yrs?|שנות|שנים)"
 
-# "5 years of experience", "3 שנות ניסיון" — a span followed by an
-# experience word. The gap is bounded so it cannot leap across a sentence.
-_RE_YEARS_EXP = re.compile(
-    r"(\d{1,2})\s*(?:\+|-\s*\d{1,2})?\s*" + _UNITS +
-    r"[^.\n]{0,24}?(?:experience|exp\b|ניסיון)",
+# Explicit junior/student markers. These are the positive evidence the filter
+# now requires, rather than merely inferring juniority from silence.
+_JUNIOR_RE = re.compile(
+    r"\b("
+    r"junior|jr\.?|entry[\s-]?level|entry|graduate|new\s+grad|fresh\s+grad|"
+    r"student|intern|internship|trainee|apprentice|rotation|"
+    r"no\s+(?:prior\s+)?experience(?:\s+required)?|"
+    r"ג'וניור|גוניור|סטודנט|סטודנטים|מתמחה|התמחות|ללא\s+ניסיון"
+    r")\b",
     re.I,
 )
-# "minimum of 2 years", "at least 4 years" — a qualifier makes it a
-# requirement even with no "experience" word.
-_RE_QUALIFIED = re.compile(
-    r"(?:at\s+least|minimum\s+of|minimum|min\.|over|more\s+than|לפחות)\s*"
-    r"(\d{1,2})\s*(?:\+|-\s*\d{1,2})?\s*" + _UNITS,
-    re.I,
+
+# A stated requirement: "3+ years", "3-5 years", "at least 4 years",
+# "minimum of 2 years", "must have 3 years".
+_REQ_PATTERNS = (
+    # "N+ years" / "N-M years" / "N years ... experience"
+    re.compile(r"(\d{1,2})\s*\+\s*" + _UNITS, re.I),
+    re.compile(r"(\d{1,2})\s*-\s*\d{1,2}\s*" + _UNITS, re.I),
+    re.compile(r"(?:at\s+least|minimum\s+of|minimum|min\.|over|more\s+than|"
+               r"must\s+have|requires?|required:?|לפחות)\s*"
+               r"(\d{1,2})\s*\+?\s*" + _UNITS, re.I),
+    # The lookbehind stops this matching the UPPER bound of a range: in
+    # "3-5 years" the requirement is 3, and max() would otherwise pick 5.
+    re.compile(r"(?<![-\d])(\d{1,2})\s*" + _UNITS +
+               r"[^.\n]{0,30}?(?:experience|ניסיון)", re.I),
 )
-# "2+ years" — an explicit plus is a requirement on its own. This is what
-# distinguishes "2+ years with Python" from "founded 10 years ago".
-_RE_PLUS = re.compile(r"(\d{1,2})\s*\+\s*" + _UNITS, re.I)
-
-_YEARS_PATTERNS = (_RE_YEARS_EXP, _RE_QUALIFIED, _RE_PLUS)
 
 
-def min_years(description: str) -> int | None:
-    """Lowest stated years-of-experience requirement, or None.
+def required_years(description: str) -> int | None:
+    """Highest stated years-of-experience requirement, or None.
 
-    Descriptions often list several stacks with different bars; the lowest is
-    the real entry requirement. A bare "N years" with neither a qualifier nor
-    an experience word is ignored, so prose like "founded 10 years ago" does
-    not read as a requirement.
+    Deliberately the HIGHEST, not the lowest. A posting that says "at least 4
+    years" somewhere and "2 years" elsewhere is a 4-year role; taking the
+    minimum let mid-level jobs through as junior.
     """
     if not description:
         return None
     found = [
         int(m.group(1))
-        for pattern in _YEARS_PATTERNS
+        for pattern in _REQ_PATTERNS
         for m in pattern.finditer(description)
     ]
     found = [n for n in found if 0 <= n <= 20]
-    return min(found) if found else None
+    return max(found) if found else None
+
+
+def is_junior(text: str) -> bool:
+    """True when the text explicitly marks the role as junior or student."""
+    return bool(_JUNIOR_RE.search(text or ""))
 
 
 def passes_stage_one(job: Job) -> bool:
@@ -167,6 +178,16 @@ def passes_stage_one(job: Job) -> bool:
 
 
 def passes_stage_two(job: Job) -> bool:
-    """Description-based checks. Requires a hydrated job."""
-    years = min_years(job.description)
-    return years is None or years <= MAX_YEARS
+    """Require positive evidence of a junior or student role.
+
+    An explicit junior/student marker wins unless the posting also demands
+    real experience. Otherwise the stated requirement must be at most
+    MAX_YEARS. A posting that states nothing and never calls itself junior is
+    rejected: silence used to be treated as acceptance and was the single
+    largest source of irrelevant alerts.
+    """
+    years = required_years(job.description)
+    if is_junior(job.title) or is_junior(job.description):
+        # "Junior ... 5+ years" happens; trust the number over the label.
+        return years is None or years <= 2
+    return years is not None and years <= MAX_YEARS

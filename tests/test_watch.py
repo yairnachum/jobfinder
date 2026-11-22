@@ -34,7 +34,7 @@ class FakeNotifier:
         return True
 
 
-def mk(job_id, title="Backend Engineer", location="Tel Aviv, Israel", desc=""):
+def mk(job_id, title="Junior Backend Engineer", location="Tel Aviv, Israel", desc=""):
     return Job(ats="fake", token="t", job_id=job_id, company="C", title=title,
                location=location, url=f"http://x/{job_id}", description=desc)
 
