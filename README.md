@@ -28,9 +28,12 @@ experience requirement are included).
 3. In the repo: Settings → Secrets and variables → Actions, add `TELEGRAM_BOT_TOKEN`
    and `TELEGRAM_CHAT_ID`.
 4. **Run the workflow once in seed mode** (Actions → watch → Run workflow → tick `seed`).
-   This records the ~1,500 currently-open jobs as already seen. Skipping this step means
-   your first scheduled run tries to notify you about all of them.
-5. After seeding finishes, the 15-minute schedule takes over.
+   This records every currently-open posting as already seen, establishing a baseline.
+   Without it, your first run delivers the backlog of roles that are *already* open —
+   mostly postings that have been up for weeks, where you are not early. The whole point
+   of this tool is being first, and seeding is what makes every later alert genuinely new.
+5. Enable the schedule: `gh workflow enable watch`. It is shipped disabled so it cannot
+   fail repeatedly before the secrets exist.
 
 ## Local use
 
