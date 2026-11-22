@@ -100,3 +100,62 @@ def role_family(title: str) -> str | None:
     if _BACKEND_RE.search(t):
         return "backend"
     return None
+
+
+MAX_YEARS = 3  # "moderate" setting: 4+ years is out of scope.
+
+_UNITS = r"(?:years?|yrs?|שנות|שנים)"
+
+# "5 years of experience", "3 שנות ניסיון" — a span followed by an
+# experience word. The gap is bounded so it cannot leap across a sentence.
+_RE_YEARS_EXP = re.compile(
+    r"(\d{1,2})\s*(?:\+|-\s*\d{1,2})?\s*" + _UNITS +
+    r"[^.\n]{0,24}?(?:experience|exp\b|ניסיון)",
+    re.I,
+)
+# "minimum of 2 years", "at least 4 years" — a qualifier makes it a
+# requirement even with no "experience" word.
+_RE_QUALIFIED = re.compile(
+    r"(?:at\s+least|minimum\s+of|minimum|min\.|over|more\s+than|לפחות)\s*"
+    r"(\d{1,2})\s*(?:\+|-\s*\d{1,2})?\s*" + _UNITS,
+    re.I,
+)
+# "2+ years" — an explicit plus is a requirement on its own. This is what
+# distinguishes "2+ years with Python" from "founded 10 years ago".
+_RE_PLUS = re.compile(r"(\d{1,2})\s*\+\s*" + _UNITS, re.I)
+
+_YEARS_PATTERNS = (_RE_YEARS_EXP, _RE_QUALIFIED, _RE_PLUS)
+
+
+def min_years(description: str) -> int | None:
+    """Lowest stated years-of-experience requirement, or None.
+
+    Descriptions often list several stacks with different bars; the lowest is
+    the real entry requirement. A bare "N years" with neither a qualifier nor
+    an experience word is ignored, so prose like "founded 10 years ago" does
+    not read as a requirement.
+    """
+    if not description:
+        return None
+    found = [
+        int(m.group(1))
+        for pattern in _YEARS_PATTERNS
+        for m in pattern.finditer(description)
+    ]
+    found = [n for n in found if 0 <= n <= 20]
+    return min(found) if found else None
+
+
+def passes_stage_one(job: Job) -> bool:
+    """Title and location only — cheap, runs before any detail fetch."""
+    return (
+        is_israel(job)
+        and seniority_ok(job.title)
+        and role_family(job.title) is not None
+    )
+
+
+def passes_stage_two(job: Job) -> bool:
+    """Description-based checks. Requires a hydrated job."""
+    years = min_years(job.description)
+    return years is None or years <= MAX_YEARS
