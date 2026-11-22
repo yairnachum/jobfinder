@@ -31,5 +31,11 @@ def test_handles_empty_and_none():
     assert html_to_text(None) == ""
 
 
+def test_drops_script_and_style_bodies():
+    """Script/style contents must not reach the relevance filter as text."""
+    assert html_to_text('<script>alert("x")</script><p>Hello</p>') == "Hello"
+    assert html_to_text("<style>.a{color:red}</style><p>Hello</p>") == "Hello"
+
+
 def test_preserves_hebrew():
     assert "שנות ניסיון" in html_to_text("<p>3 שנות ניסיון</p>")
