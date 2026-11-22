@@ -112,3 +112,20 @@ async def test_unknown_ats_in_registry_is_skipped(tmp_path):
     n = FakeNotifier()
     await run_once(registry, {}, n, state_path=tmp_path / "s.jsonl")
     assert n.sent == []
+
+
+async def test_pending_entry_is_cleared_when_job_stops_matching(tmp_path, registry):
+    """A retry-queued job that later stops matching must not stay pending
+    forever — otherwise the state file leaks an entry on every such job."""
+    path = tmp_path / "s.jsonl"
+    failing = FakeNotifier(fail=True)
+    await run_once(registry, {"fake": FakeAdapter([mk("1")])}, failing,
+                   state_path=path)
+    from jobfinder.store import SeenStore
+    assert SeenStore(path).pending() == [mk("1").uid]
+
+    # Same job id, but the employer retitled it to something senior.
+    await run_once(registry,
+                   {"fake": FakeAdapter([mk("1", title="Senior Backend Engineer")])},
+                   FakeNotifier(), state_path=path)
+    assert SeenStore(path).pending() == []

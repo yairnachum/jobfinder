@@ -100,6 +100,9 @@ async def run_once(
         for job in all_jobs:
             if job.uid not in matched:
                 store.mark(job.uid, company=job.company, title=job.title)
+                # It may have been queued for retry on an earlier run and since
+                # stopped matching; without this it would stay pending forever.
+                store.clear_pending(job.uid)
 
         store.prune()
         store.save()
