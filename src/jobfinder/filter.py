@@ -57,6 +57,10 @@ _EXCLUDE_FUNCTION_RE = re.compile(
     r"sales|marketing|recruit\w*|talent|hr\b|human\s+resources|finance|"
     r"controller|legal|counsel|customer\s+success|account\s+executive|"
     r"bdr|sdr|office\s+manager|designer|design|content|copywriter|"
+    # Only when "support" qualifies the role itself — an engineering role
+    # that merely sits in a support org is still in scope.
+    r"support\s+(?:engineer|specialist|representative)|"
+    r"technical\s+support|customer\s+support|"
     r"compensation|benefits|procurement|facilities|executive\s+assistant"
     r")\b",
     re.I,

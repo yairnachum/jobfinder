@@ -57,3 +57,19 @@ def test_non_engineering_titles_have_no_family(title):
 def test_qa_is_not_in_scope_for_phase_one():
     """User selected backend and data only."""
     assert role_family("QA Automation Engineer") is None
+
+
+@pytest.mark.parametrize("title", [
+    "Developer Support Engineer",
+    "Technical Support Engineer",
+    "Customer Support Specialist",
+])
+def test_support_roles_are_out_of_scope(title):
+    """Support is a different function from backend/data; the user picked
+    neither. Matched only when 'support' qualifies the role noun, so an
+    engineering role that merely sits in a support org still passes."""
+    assert role_family(title) is None
+
+
+def test_engineering_role_within_a_support_org_still_matches():
+    assert role_family("Agentic AI Engineer - Product Support") == "data"
