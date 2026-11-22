@@ -10,6 +10,12 @@ def test_unescapes_entities_then_strips():
     assert html_to_text("&lt;p&gt;3+ years&lt;/p&gt;") == "3+ years"
 
 
+def test_decodes_entities_surviving_the_tag_strip():
+    """Greenhouse can double-encode: the markup is escaped AND so are the
+    entities inside it, so a second decode pass is needed after stripping."""
+    assert html_to_text("&lt;p&gt;R&amp;amp;D Engineer&lt;/p&gt;") == "R&D Engineer"
+
+
 def test_collapses_whitespace():
     assert html_to_text("<p>a</p>\n\n\n<p>b</p>") == "a b"
 
