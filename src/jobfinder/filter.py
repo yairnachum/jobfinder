@@ -18,7 +18,10 @@ _IL_PLACES = [
 ]
 _IL_RE = re.compile(r"(?<![a-z])(" + "|".join(_IL_PLACES) + r")(?![a-z])", re.I)
 
-# "Mount Israel, Ohio" and similar: an Israel token next to a foreign marker.
+# The country named explicitly, as opposed to a city that merely sits in it.
+_IL_COUNTRY_RE = re.compile(r"(?<![a-z])(israel|ישראל)(?![a-z])", re.I)
+
+# Foreign markers, used only to disqualify a city-only match.
 _FOREIGN_RE = re.compile(
     r"\b(ohio|united states|usa|u\.s\.|canada|ontario|california|texas|"
     r"new york|london|england|uk|united kingdom|germany|france|india|"
@@ -38,10 +41,14 @@ def is_israel(job: Job) -> bool:
     text = job.location or ""
     if not _IL_RE.search(text):
         return False
-    # Guard against a place name colliding with a foreign location.
-    if _FOREIGN_RE.search(text):
-        return False
-    return True
+    # The country named outright wins, even alongside a foreign office: a
+    # multi-site posting like "Tel Aviv, Israel; New York" is open in Israel,
+    # and missing a real opening costs more than an occasional stray one.
+    if _IL_COUNTRY_RE.search(text):
+        return True
+    # Only a city name matched, and those can collide with foreign places
+    # ("Tel Aviv Street, London"), so a foreign marker disqualifies it.
+    return not _FOREIGN_RE.search(text)
 
 
 _SENIOR_RE = re.compile(

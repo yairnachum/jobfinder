@@ -94,6 +94,10 @@ async def run_once(
             else:
                 # Never mark seen on failure, or the job is lost forever.
                 store.add_pending(job.uid)
+            # Persist after every delivery, not once at the end. If the run is
+            # killed mid-batch (Actions timeout, preemption), anything already
+            # delivered stays recorded and is not sent to the user twice.
+            store.save()
 
         # Non-matching jobs are recorded so they are not re-filtered each run.
         matched = {j.uid for j in matches}

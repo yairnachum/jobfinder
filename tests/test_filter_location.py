@@ -40,6 +40,14 @@ def test_empty_location_without_country_is_not_israel():
     assert is_israel(mk()) is False
 
 
-def test_substring_false_positive_guarded():
-    """'Israelite Road' style strings should not pass on a bare substring."""
-    assert is_israel(mk(location="Mount Israel, Ohio")) is False
+def test_city_name_colliding_with_a_foreign_place_is_rejected():
+    """A city token alone is weak evidence: 'Tel Aviv Street, London' is in
+    London, so a foreign marker disqualifies a city-only match."""
+    assert is_israel(mk(location="Tel Aviv Street, London")) is False
+
+
+def test_israel_named_outright_beats_a_foreign_office():
+    """Multi-site postings list several offices. The role IS open in Israel,
+    and missing a real opening costs more than an occasional stray one."""
+    assert is_israel(mk(location="Tel Aviv, Israel; New York")) is True
+    assert is_israel(mk(location="Herzliya, Israel / London, UK")) is True

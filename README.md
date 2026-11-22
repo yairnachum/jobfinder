@@ -36,7 +36,7 @@ experience requirement are included).
 
 ```bash
 uv venv --python 3.12 && uv pip install -e ".[dev]"
-uv run pytest -q                    # 172 tests, no network needed
+uv run pytest -q                    # 178 tests, no network needed
 uv run python scripts/smoke.py      # dry run against the live boards, sends nothing
 ```
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import dataclasses
+import logging
 from datetime import datetime
 
 import httpx
@@ -8,6 +9,8 @@ import httpx
 from jobfinder.adapters.base import fetch_json
 from jobfinder.model import Job
 from jobfinder.textutil import html_to_text
+
+log = logging.getLogger(__name__)
 
 BASE = "https://api.smartrecruiters.com/v1/companies/{token}/postings"
 PAGE = 100
@@ -44,24 +47,33 @@ class SmartRecruiters:
             if not data or not data.get("content"):
                 break
             for item in data["content"]:
-                loc = item.get("location") or {}
-                raw_country = (loc.get("country") or "").strip()
-                jobs.append(
-                    Job(
-                        ats=self.name,
-                        token=token,
-                        job_id=str(item.get("id")),
-                        company=(item.get("company") or {}).get("name") or company,
-                        title=item.get("name") or "",
-                        location=_location(loc),
-                        url=f"{base}/{item.get('id')}",
-                        description="",  # filled by hydrate()
-                        posted_at=_parse_dt(item.get("releasedDate")),
-                        # API returns lowercase ISO such as "il".
-                        country=raw_country.upper() if len(raw_country) == 2 else None,
-                        raw=item,
+                if item.get("id") is None:
+                    log.warning("%s/%s: job with no id, skipping", self.name, token)
+                    continue
+                try:
+                    loc = item.get("location") or {}
+                    raw_country = (loc.get("country") or "").strip()
+                    jobs.append(
+
+                        Job(
+                            ats=self.name,
+                            token=token,
+                            job_id=str(item.get("id")),
+                            company=(item.get("company") or {}).get("name") or company,
+                            title=item.get("name") or "",
+                            location=_location(loc),
+                            url=f"{base}/{item.get('id')}",
+                            description="",  # filled by hydrate()
+                            posted_at=_parse_dt(item.get("releasedDate")),
+                            # API returns lowercase ISO such as "il".
+                            country=raw_country.upper() if len(raw_country) == 2 else None,
+                            raw=item,
+                        )
                     )
-                )
+                except Exception as exc:  # noqa: BLE001
+                    # One malformed record must not cost the whole board.
+                    log.warning("%s/%s: skipping malformed job: %s",
+                                self.name, token, exc)
             offset += PAGE
             if offset >= data.get("totalFound", 0):
                 break
