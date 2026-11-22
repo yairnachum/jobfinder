@@ -41,17 +41,71 @@ async def test_listing_has_no_description():
 
 
 @respx.mock
-async def test_hydrate_fills_description_and_url():
-    respx.get(url__startswith=BASE).mock(return_value=httpx.Response(200, json=LIST))
+async def test_hydrate_swaps_in_the_public_posting_url():
+    """The listing gives only an API URL; hydration must replace it with the
+    human-facing posting URL, without changing the job's identity.
+
+    Routes are registered most-specific-first: the detail URL is a sub-path of
+    the listing URL, and respx resolves overlapping routes in registration
+    order, so a leading `url__startswith=BASE` would swallow the detail call.
+    """
+    job_id = LIST["content"][0]["id"]
+    respx.get(f"{BASE}/{job_id}").mock(return_value=httpx.Response(200, json=DETAIL))
+    respx.get(url__startswith=f"{BASE}?").mock(
+        return_value=httpx.Response(200, json=LIST)
+    )
     async with httpx.AsyncClient() as c:
         jobs = await SmartRecruiters().fetch(c, "armis", "Armis")
-        respx.get(f"{BASE}/{jobs[0].job_id}").mock(
-            return_value=httpx.Response(200, json=DETAIL)
-        )
         full = await SmartRecruiters().hydrate(c, jobs[0])
-    assert len(full.description) > 50
+
+    assert full.url == DETAIL["postingUrl"]
+    assert full.url != jobs[0].url
     assert "<p>" not in full.description
     assert full.uid == jobs[0].uid, "hydration must not change identity"
+
+
+@respx.mock
+async def test_hydrate_joins_description_sections_as_plain_text():
+    """Armis's real detail fixture has a literal '<p>...</p>' placeholder body,
+    so a synthetic payload is used to exercise the section joining itself."""
+    job_id = LIST["content"][0]["id"]
+    detail = {
+        "postingUrl": "https://jobs.smartrecruiters.com/Armis/1",
+        "jobAd": {
+            "sections": {
+                "companyDescription": {"text": "<p>We are Armis.</p>"},
+                "jobDescription": {"text": "<p>Build the backend services.</p>"},
+                "qualifications": {"text": "<ul><li>2+ years of Python</li></ul>"},
+                "additionalInformation": {"text": ""},
+            }
+        },
+    }
+    respx.get(f"{BASE}/{job_id}").mock(return_value=httpx.Response(200, json=detail))
+    respx.get(url__startswith=f"{BASE}?").mock(
+        return_value=httpx.Response(200, json=LIST)
+    )
+    async with httpx.AsyncClient() as c:
+        jobs = await SmartRecruiters().fetch(c, "armis", "Armis")
+        full = await SmartRecruiters().hydrate(c, jobs[0])
+
+    assert "Build the backend services." in full.description
+    assert "2+ years of Python" in full.description
+    # companyDescription is boilerplate marketing, not job requirements.
+    assert "We are Armis." not in full.description
+    assert "<" not in full.description
+
+
+@respx.mock
+async def test_hydrate_keeps_job_unchanged_when_detail_fetch_fails():
+    job_id = LIST["content"][0]["id"]
+    respx.get(f"{BASE}/{job_id}").mock(return_value=httpx.Response(500))
+    respx.get(url__startswith=f"{BASE}?").mock(
+        return_value=httpx.Response(200, json=LIST)
+    )
+    async with httpx.AsyncClient() as c:
+        jobs = await SmartRecruiters().fetch(c, "armis", "Armis")
+        full = await SmartRecruiters().hydrate(c, jobs[0])
+    assert full == jobs[0]
 
 
 @respx.mock
