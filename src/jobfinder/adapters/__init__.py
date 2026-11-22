@@ -7,10 +7,11 @@ from jobfinder.adapters.comeet import Comeet
 from jobfinder.adapters.greenhouse import Greenhouse
 from jobfinder.adapters.lever import Lever
 from jobfinder.adapters.smartrecruiters import SmartRecruiters
+from jobfinder.adapters.workday import Workday
 
 ADAPTERS: dict[str, Adapter] = {
     a.name: a
-    for a in (Greenhouse(), Ashby(), Lever(), SmartRecruiters(), Comeet())
+    for a in (Greenhouse(), Ashby(), Lever(), SmartRecruiters(), Comeet(), Workday())
 }
 
 

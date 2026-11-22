@@ -1,0 +1,424 @@
+{
+ "total": 397,
+ "jobPostings": [
+  {
+   "title": "Senior PHY System Integration Engineer",
+   "externalPath": "/job/Israel-Yokneam/Senior-System-Optic-PHY-Engineer_JR2015229",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2015229"
+   ]
+  },
+  {
+   "title": "Board Design Engineer, NVLINK",
+   "externalPath": "/job/Israel-Raanana/Board-Design-Engineer--NVLINK_JR2015270",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2015270"
+   ]
+  },
+  {
+   "title": "Senior Software Architect, AI Network",
+   "externalPath": "/job/Israel-Raanana/Senior-Software-Architect--AI-Network_JR2018051",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 4 Days Ago",
+   "bulletFields": [
+    "JR2018051"
+   ]
+  },
+  {
+   "title": "Senior LLM Agents Architect",
+   "externalPath": "/job/Israel-Yokneam/Senior-LLM-Agents-Architect_JR2018397",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2018397"
+   ]
+  },
+  {
+   "title": "Senior Software Engineer, DOCA SDK",
+   "externalPath": "/job/Israel-Raanana/Senior-Software-Engineer--DOCA-SDK_JR2021322",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2021322"
+   ]
+  },
+  {
+   "title": "Senior Hardware Engineer",
+   "externalPath": "/job/Israel-Raanana/Senior-Hardware-Engineer_JR2021407",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2021407"
+   ]
+  },
+  {
+   "title": "Software Architect, Network System Validation",
+   "externalPath": "/job/Israel-Yokneam/Software-Architect--Network-System-Validation_JR2023705",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2023705"
+   ]
+  },
+  {
+   "title": "Senior Site Reliability Engineer",
+   "externalPath": "/job/Israel-Yokneam/Senior-Site-Reliability-Engineer_JR2024251",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2024251"
+   ]
+  },
+  {
+   "title": "Engineering Manager, Network System Validation",
+   "externalPath": "/job/Israel-Yokneam/Engineering-Manager--Network-System-Validation_JR2025289",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2025289"
+   ]
+  },
+  {
+   "title": "Senior Software Engineer, DOCA SDK",
+   "externalPath": "/job/Israel-Yokneam/Senior-Software-Engineer--DOCA-SDK_JR2025266",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2025266"
+   ]
+  },
+  {
+   "title": "PCB Design Layout Engineer",
+   "externalPath": "/job/Israel-Yokneam/PCB-Design-Layout-Engineer_JR2025267",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2025267"
+   ]
+  },
+  {
+   "title": "Senior Board Design Hardware Engineer",
+   "externalPath": "/job/Israel-Raanana/Senior-Board-Design-Hardware-Engineer_JR2025930",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2025930"
+   ]
+  },
+  {
+   "title": "Senior Hardware Integration and Validation Engineer",
+   "externalPath": "/job/Israel-Raanana/Senior-Hardware-Integration-and-Validation-Engineer_JR2025934-1",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2025934"
+   ]
+  },
+  {
+   "title": "Software Engineer - Python, C++, Video Algorithms",
+   "externalPath": "/job/Israel-Yokneam/Software-Engineer---Python--C----Video-Algorithms_JR2026084-9",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 3 Days Ago",
+   "bulletFields": [
+    "JR2026084"
+   ]
+  },
+  {
+   "title": "Senior System Hardware Architect",
+   "externalPath": "/job/Israel-Yokneam/Senior-System-Hardware-Architect_JR2025297",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2025297"
+   ]
+  },
+  {
+   "title": "Senior Hardware Validation Engineer",
+   "externalPath": "/job/Israel-Raanana/Senior-Hardware-Validation-Engineer_JR2027906",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2027906"
+   ]
+  },
+  {
+   "title": "Senior Software Technical Program Manager",
+   "externalPath": "/job/Israel-Yokneam/Senior-Software-Technical-Program-Manager_JR2005814-1",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2005814"
+   ]
+  },
+  {
+   "title": "Senior PCB Design Layout Engineer",
+   "externalPath": "/job/Israel-Yokneam/Senior-PCB-Design-Layout-Engineer_JR2008755",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2008755"
+   ]
+  },
+  {
+   "title": "Senior Hardware Manager, Co Package Optics Switch Design",
+   "externalPath": "/job/Israel-Yokneam/Senior-Hardware-Manager--Co-Package-Optics-Switch-Design_JR2011255-1",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2011255"
+   ]
+  },
+  {
+   "title": "Senior System Architect, High-Speed Interconnects",
+   "externalPath": "/job/Israel-Yokneam/Senior-System-Architect--High-Speed-Interconnects_JR2011546",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR2011546"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Job Category",
+   "values": [
+    {
+     "descriptor": "Engineering",
+     "id": "0c40f6bd1d8f10ae43ffaefd46dc7e78",
+     "count": 356
+    },
+    {
+     "descriptor": "Program Manager",
+     "id": "0c40f6bd1d8f10ae43ffc668c6847e8c",
+     "count": 12
+    },
+    {
+     "descriptor": "IT - Information Technology",
+     "id": "0c40f6bd1d8f10ae43ffbd1459047e84",
+     "count": 12
+    },
+    {
+     "descriptor": "Operations",
+     "id": "0c40f6bd1d8f10ae43ffc3fc7d8c7e8a",
+     "count": 8
+    },
+    {
+     "descriptor": "Sales",
+     "id": "0c40f6bd1d8f10ae43ffcac5bbec7e90",
+     "count": 4
+    },
+    {
+     "descriptor": "Marketing",
+     "id": "0c40f6bd1d8f10ae43ffc19725ec7e88",
+     "count": 2
+    },
+    {
+     "descriptor": "Professional Services",
+     "id": "e8bdc341a93101bd5f4d2b0a1c005e36",
+     "count": 1
+    },
+    {
+     "descriptor": "Univ Employment",
+     "id": "0c40f6bd1d8f10ae43ffda1e8d447e94",
+     "count": 1
+    },
+    {
+     "descriptor": "Finance",
+     "id": "0c40f6bd1d8f10ae43ffb5dd06f47e7e",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Job Type",
+   "values": [
+    {
+     "descriptor": "Regular Employee",
+     "id": "0c40f6bd1d8f10adf6dae161b1844a15",
+     "count": 355
+    },
+    {
+     "descriptor": "Management",
+     "id": "0c40f6bd1d8f10adf6dae2cd57444a16",
+     "count": 37
+    },
+    {
+     "descriptor": "New College Graduate",
+     "id": "ab40a98049581037a3ada55b087049b7",
+     "count": 4
+    },
+    {
+     "descriptor": "Intern (Fixed Term)",
+     "id": "0c40f6bd1d8f10adf6dae42e46d44a17",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Time Type",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "5509c0b5959810ac0029943377d47364",
+     "count": 396
+    },
+    {
+     "descriptor": "Part time",
+     "id": "5509c0b5959810ac00299430e7947363",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locationHierarchy2",
+     "descriptor": "Location Type",
+     "values": [
+      {
+       "descriptor": "Office",
+       "id": "0c3f5f117e9a0101f6422f0fe79d0000",
+       "count": 392
+      },
+      {
+       "descriptor": "Remote",
+       "id": "0c3f5f117e9a0101f63dc469c3010000",
+       "count": 5
+      }
+     ]
+    },
+    {
+     "facetParameter": "locationHierarchy1",
+     "descriptor": "Locations",
+     "values": [
+      {
+       "descriptor": "China",
+       "id": "2fcb99c455831013ea529fe151e3323c",
+       "count": 2
+      },
+      {
+       "descriptor": "India",
+       "id": "2fcb99c455831013ea52b82135ba3266",
+       "count": 1
+      },
+      {
+       "descriptor": "Israel",
+       "id": "2fcb99c455831013ea52bbe14cf9326c",
+       "count": 384
+      },
+      {
+       "descriptor": "Mexico",
+       "id": "2fcb99c455831013ea52cd244532328a",
+       "count": 1
+      },
+      {
+       "descriptor": "Thailand",
+       "id": "2fcb99c455831013ea52f07ea4c732c6",
+       "count": 1
+      },
+      {
+       "descriptor": "United States",
+       "id": "2fcb99c455831013ea52fb338f2932d8",
+       "count": 5
+      },
+      {
+       "descriptor": "Vietnam",
+       "id": "2fcb99c455831013ea52fea3f8d732de",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "facetParameter": "locations",
+     "descriptor": "Sites",
+     "values": [
+      {
+       "descriptor": "China, Beijing",
+       "id": "91336993fab910af6d710912773cc339",
+       "count": 1
+      },
+      {
+       "descriptor": "China, Shanghai",
+       "id": "91336993fab910af6d710b3449b4c33e",
+       "count": 1
+      },
+      {
+       "descriptor": "China, Shenzhen",
+       "id": "91336993fab910af6d7106eea8f4c334",
+       "count": 1
+      },
+      {
+       "descriptor": "India, Pune",
+       "id": "91336993fab910af6d6fb0782884c1cb",
+       "count": 1
+      },
+      {
+       "descriptor": "Israel, Beer Sheva",
+       "id": "970bf8c909a701bb080521ddd400ae07",
+       "count": 26
+      },
+      {
+       "descriptor": "Israel, Raanana",
+       "id": "970bf8c909a7013ea54a57dcd4008107",
+       "count": 93
+      },
+      {
+       "descriptor": "Israel, Tel Aviv",
+       "id": "c7769ee377291036b08490819096b8bf",
+       "count": 210
+      },
+      {
+       "descriptor": "Israel, Tel Hai",
+       "id": "970bf8c909a7016a7d893ddcd4007c07",
+       "count": 11
+      },
+      {
+       "descriptor": "Israel, Yokneam",
+       "id": "970bf8c909a701c749f87bdcd4008607",
+       "count": 292
+      },
+      {
+       "descriptor": "Mexico, Remote",
+       "id": "91336993fab910af6d6f97e94b04c199",
+       "count": 1
+      },
+      {
+       "descriptor": "Thailand, Remote",
+       "id": "f57d67c891a11057224421d76bc979ab",
+       "count": 1
+      },
+      {
+       "descriptor": "US, CA, Remote",
+       "id": "91336993fab910af6d716528e9d4c406",
+       "count": 1
+      },
+      {
+       "descriptor": "US, CA, Santa Clara",
+       "id": "91336993fab910af6d702fae0bb4c2e8",
+       "count": 4
+      },
+      {
+       "descriptor": "Vietnam, Hanoi",
+       "id": "dd4916e138561000a8f8afa559f50000",
+       "count": 1
+      },
+      {
+       "descriptor": "Vietnam, Remote",
+       "id": "7ae28cf24c8b10874977c2d1387c19b0",
+       "count": 2
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

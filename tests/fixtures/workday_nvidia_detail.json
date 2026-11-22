@@ -1,0 +1,80 @@
+{
+ "jobPostingInfo": {
+  "id": "3b6b26e5f9c4103051d97a2f78230000",
+  "title": "Senior PHY System Integration Engineer",
+  "jobDescription": "<p>NVIDIA&#39;s Networking division is a leading supplier of innovative end-to-end InfiniBand and Ethernet connectivity solutions and services for servers and storage. We offer market-leading solutions that include adapter cards, switches, optical transceivers, cables, and software to support networking technologies. Our products optimize data center performance and deliver industry-leading bandwidth and scalability. In addition, we serve a wide range of sectors including high performance computing, enterprise, data centers, cloud computing. We are constantly reinventing ourselves to stay ahead of the market and bring ground-breaking products and services to the industry by using novel technologies. Our products are focused on delivering the most optimized power - performance communication solutions for industries like AI, ML, Cloud, Media and Entertainment. </p><p></p><p>We are seeking experienced electrical engineers with a passion for system-level thinking and innovation in high-performance optical switch development. This role offers a unique opportunity to shape and deliver next-generation products that push the boundaries of high-speed optical communication.</p><p></p><p><b>What You’ll Be Doing:</b></p><ul><li><p><span>Lead and serve as the technical focal point for the integration of PHY system aspects and optical (CPO) electrical subsystems, ensuring their performance.</span></p></li><li><p>Hands on cross-disciplinary testing efforts and lab work, collaborating with system architecture, optics, silicon, thermal, mechanical, signal/power integrity, and software teams.</p></li><li><p>Characterization and testing of optical links using lab equipment (e.g., oscilloscopes, BER testers, optical spectrum analyzers and simulation tools).</p></li><li><p>Driving product scalability, working with internal partners—qualification teams to transition designs from prototype to high-volume production.</p></li><li><p>Documentation and reporting of design specifications, test results, and performance metrics.</p></li></ul><p></p><p><b>What we need to see:  </b></p><ul><li><p>B.Sc. in Electrical Engineering from a leading university or equivalent experience</p></li><li><p>8&#43; years of relevant experience.</p></li><li><p>Strong analytical and problem-solving skills.</p></li><li><p>Excellent communication and collaboration abilities.</p></li><li><p>Enthusiasm for working on multidisciplinary projects.</p></li><li><p>Solid engineering intuition and understanding of physical trade-offs.</p></li><li><p>Ability to thrive in a fast-paced development environment.</p></li></ul><p></p><p><b>Ways to stand out from the crowd : </b></p><ul><li><p>M.Sc./PhD degree in electrical engineering</p></li><li><p>Experience in high-speed Transceiver and PHY design is highly valued</p></li><li><p>Strong knowledge and experience in electro-optic communication or high-speed signals and analog circuits</p></li><li><p>Hands on experience with optoelectrical lab work and validation. </p></li></ul><p></p><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you&#39;re creative, ambitious and enjoy having fun, then what are you waiting for apply today!</p><p></p><p>NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.</p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>",
+  "location": "Israel, Yokneam",
+  "additionalLocations": [
+   "Israel, Raanana"
+  ],
+  "postedOn": "Posted 30+ Days Ago",
+  "startDate": "2026-09-14",
+  "timeType": "Full time",
+  "jobReqId": "JR2015229",
+  "jobPostingId": "Senior-System-Optic-PHY-Engineer_JR2015229",
+  "jobPostingSiteId": "NVIDIAExternalCareerSite",
+  "country": {
+   "descriptor": "Israel",
+   "id": "084562884af243748dad7c84c304d89a"
+  },
+  "canApply": true,
+  "posted": true,
+  "includeResumeParsing": true,
+  "jobRequisitionLocation": {
+   "descriptor": "Israel, Yokneam",
+   "country": {
+    "descriptor": "Israel",
+    "id": "084562884af243748dad7c84c304d89a",
+    "alpha2Code": "IL"
+   }
+  },
+  "externalUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-System-Optic-PHY-Engineer_JR2015229"
+ },
+ "hiringOrganization": {
+  "name": "IL00 Mellanox Technologies, Ltd.",
+  "url": ""
+ },
+ "similarJobs": [
+  {
+   "title": "Senior High Speed Optical Transceiver Design Engineer",
+   "externalPath": "/job/Israel-Yokneam/Senior-High-Speed-Optical-Transceiver-Design-Engineer_JR2003100",
+   "timeType": "Full time",
+   "locationsText": "Israel, Yokneam",
+   "postedOn": "Posted 30+ Days Ago",
+   "startDate": "2026-06-17"
+  },
+  {
+   "title": "Senior Hardware System Engineer",
+   "externalPath": "/job/Israel-Yokneam/Senior-System-Failure-Analysis-Engineer_JR2014028",
+   "timeType": "Full time",
+   "locationsText": "Israel, Yokneam",
+   "postedOn": "Posted 30+ Days Ago",
+   "startDate": "2026-06-29"
+  },
+  {
+   "title": "Senior VLSI Integration Engineer",
+   "externalPath": "/job/Israel-Tel-Aviv/Senior-VLSI-Integration-Engineer_JR2029862",
+   "timeType": "Full time",
+   "locationsText": "4 Locations",
+   "postedOn": "Posted 3 Days Ago",
+   "startDate": "2026-11-19"
+  },
+  {
+   "title": "Senior Hardware Integration and Validation Engineer",
+   "externalPath": "/job/Israel-Raanana/Senior-Hardware-Integration-and-Validation-Engineer_JR2025934-1",
+   "timeType": "Full time",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "startDate": "2026-09-22"
+  },
+  {
+   "title": "Senior Firmware PHY Developer",
+   "externalPath": "/job/Israel-Yokneam/Senior-Firmware-PHY-Developer_JR2029989-1",
+   "timeType": "Full time",
+   "locationsText": "Israel, Yokneam",
+   "postedOn": "Posted 6 Days Ago",
+   "startDate": "2026-11-16"
+  }
+ ],
+ "userAuthenticated": false
+}

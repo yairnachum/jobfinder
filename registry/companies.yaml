@@ -1,7 +1,6 @@
-# company -> ATS board. Discovered by slug probing plus careers-page
-# fingerprinting, then verified against the live API.
-# comeet tokens are 'uid|token'; both values are published publicly
-# in the company's own careers page markup.
+# company -> ATS board. Discovered by slug probing, careers-page
+# fingerprinting and tenant/site probing, then verified live.
+# comeet tokens are 'uid|token'; workday tokens are 'tenant|dc|site'.
 companies:
   - {name: "Authomize", ats: ashby, token: delinea, il_verified: false}
   - {name: "Bynder Israel", ats: ashby, token: bynder, il_verified: false}
@@ -128,3 +127,11 @@ companies:
   - {name: "Otorio", ats: smartrecruiters, token: ServiceNow, il_verified: true}
   - {name: "Skybox Security", ats: smartrecruiters, token: skybox, il_verified: false}
   - {name: "Trigo", ats: smartrecruiters, token: trigo, il_verified: true}
+  - {name: "Abbott", ats: workday, token: "abbott|wd5|AbbottCareers", il_verified: true}
+  - {name: "Cisco", ats: workday, token: "cisco|wd5|Cisco_Careers", il_verified: true}
+  - {name: "Marvell", ats: workday, token: "marvell|wd1|MarvellCareers", il_verified: false}
+  - {name: "Medtronic", ats: workday, token: "medtronic|wd1|MedtronicCareers", il_verified: true}
+  - {name: "Novartis", ats: workday, token: "novartis|wd3|Novartis_Careers", il_verified: true}
+  - {name: "NVIDIA", ats: workday, token: "nvidia|wd5|NVIDIAExternalCareerSite", il_verified: true}
+  - {name: "PayPal", ats: workday, token: "paypal|wd1|jobs", il_verified: true}
+  - {name: "ThermoFisher", ats: workday, token: "thermofisher|wd5|THERMOFISHERCareers", il_verified: true}
