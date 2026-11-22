@@ -1,0 +1,129 @@
+{
+ "offset": 0,
+ "limit": 100,
+ "totalFound": 2,
+ "content": [
+  {
+   "id": "743999654168811",
+   "name": "QA Team Leader",
+   "uuid": "6a9450df-c3be-4eb6-b167-965c111d84e9",
+   "jobAdId": "d1feb85e-22da-41af-b201-a46d808b8199",
+   "defaultJobAd": true,
+   "refNumber": "REF3U",
+   "company": {
+    "identifier": "Armis",
+    "name": "Armis"
+   },
+   "releasedDate": "2017-06-26T09:36:21.000Z",
+   "location": {
+    "city": "Tel Aviv-Yafo",
+    "region": "Tel Aviv District",
+    "country": "il",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "32.0852999",
+    "longitude": "34.78176759999997",
+    "fullLocation": "Tel Aviv-Yafo, Tel Aviv District, Israel"
+   },
+   "industry": {
+    "id": "computer_and_network_security",
+    "label": "Computer And Network Security"
+   },
+   "department": {},
+   "function": {
+    "id": "quality_assurance",
+    "label": "Quality Assurance"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "director",
+    "label": "Director"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "il",
+     "valueLabel": "Israel"
+    },
+    {
+     "fieldId": "5950d433e4b03cda1604b5f6",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Armis"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/armis/postings/743999654168811",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "743999654168337",
+   "name": "DevOps Engineer",
+   "uuid": "c50ac415-ba80-47fd-bfc1-acb860b3dcb9",
+   "jobAdId": "0d5eed04-d707-492b-be89-a40a2faf0352",
+   "defaultJobAd": true,
+   "refNumber": "REF2S",
+   "company": {
+    "identifier": "Armis",
+    "name": "Armis"
+   },
+   "releasedDate": "2017-06-26T09:31:08.000Z",
+   "location": {
+    "city": "Tel Aviv-Yafo",
+    "region": "Tel Aviv District",
+    "country": "il",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "32.0852999",
+    "longitude": "34.78176759999997",
+    "fullLocation": "Tel Aviv-Yafo, Tel Aviv District, Israel"
+   },
+   "industry": {
+    "id": "computer_and_network_security",
+    "label": "Computer And Network Security"
+   },
+   "department": {},
+   "function": {
+    "id": "engineering",
+    "label": "Engineering"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Not Applicable"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "il",
+     "valueLabel": "Israel"
+    },
+    {
+     "fieldId": "5950d433e4b03cda1604b5f6",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Armis"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/armis/postings/743999654168337",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  }
+ ]
+}
