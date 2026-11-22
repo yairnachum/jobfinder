@@ -44,6 +44,15 @@ async def fetch_json(
             if resp.status_code in (404, 410):
                 log.warning("dead board %s -> %s", url, resp.status_code)
                 return None
+            # 429 means slow down, not fail. Back off for the server's
+            # stated interval rather than burning the remaining attempts.
+            if resp.status_code == 429:
+                wait = resp.headers.get("Retry-After")
+                delay = float(wait) if (wait or "").isdigit() else backoff * 4
+                log.warning("rate limited %s, waiting %.1fs", url, delay)
+                if attempt + 1 < retries and delay:
+                    await asyncio.sleep(min(delay, 20.0))
+                continue
             if resp.status_code >= 400:
                 raise httpx.HTTPStatusError(
                     f"status {resp.status_code}", request=resp.request, response=resp

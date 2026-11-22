@@ -8,8 +8,10 @@ companies:
   - {name: "Finout", ats: ashby, token: finout, il_verified: true}
   - {name: "HoneyBook", ats: ashby, token: honeybook, il_verified: true}
   - {name: "Lemonade", ats: ashby, token: lemonade, il_verified: true}
+  - {name: "Mend", ats: ashby, token: mend-io, il_verified: true}
   - {name: "Minerva Labs", ats: ashby, token: minerva, il_verified: false}
   - {name: "Moon Active", ats: ashby, token: moonactive, il_verified: true}
+  - {name: "Novidea", ats: ashby, token: novidea, il_verified: true}
   - {name: "Oligo Security", ats: ashby, token: oligo, il_verified: false}
   - {name: "Orca Security", ats: ashby, token: orca, il_verified: false}
   - {name: "Pinecone", ats: ashby, token: pinecone, il_verified: false}
@@ -28,6 +30,7 @@ companies:
   - {name: "AI21 Labs", ats: comeet, token: "E6.001|6E12946DC230276E13DE93708294637083708", il_verified: true}
   - {name: "Aqua Security", ats: comeet, token: "91.001|191644966966644E194B3191644644", il_verified: true}
   - {name: "Arbe", ats: comeet, token: "C6.001|6C12886D821B0414432886144328862F472F47", il_verified: true}
+  - {name: "Backslash Security", ats: comeet, token: "98.004|89433783C0C22503378337889419BC33782AE4", il_verified: true}
   - {name: "Ceragon", ats: comeet, token: "D3.003|3D3131FF4C01AC57A61AC51E98131FF4C", il_verified: true}
   - {name: "Checkmarx", ats: comeet, token: "C0.008|C8320190002581902584B0708", il_verified: true}
   - {name: "Cognyte", ats: comeet, token: "F2.009|2F9EDD2F92F911D61AC12F914CF11D62F9", il_verified: true}
@@ -36,6 +39,7 @@ companies:
   - {name: "Earnix", ats: comeet, token: "93.00B|39B1207AD1AD1736736120739B193D736", il_verified: true}
   - {name: "Elementor", ats: comeet, token: "A3.00F|3AF126BB0D161A3AF161A00B0D126B", il_verified: true}
   - {name: "Insightec", ats: comeet, token: "4A.004|A4447DC2910A44148829105C6452201ECC3354", il_verified: true}
+  - {name: "Ionix", ats: comeet, token: "08.003|8033012200C481B18098030381500", il_verified: true}
   - {name: "Minute Media", ats: comeet, token: "45.00A|54A1A7225062A50FDE2F9A1FBC01FBC1528", il_verified: true}
   - {name: "Moovit", ats: comeet, token: "63.007|36711036CE11031E9F146A1B38367A356CE", il_verified: true}
   - {name: "Nagomi", ats: comeet, token: "89.00B|98B42CD98B98B4C5855E3262C262C262C3942", il_verified: true}
@@ -48,7 +52,9 @@ companies:
   - {name: "Personetics", ats: comeet, token: "83.00A|38A11B2A9E018C60153C714A9E38A", il_verified: true}
   - {name: "Playbuzz", ats: comeet, token: "F0.005|F53D41EA5BE5BE89D1EA2DF7A8F5", il_verified: true}
   - {name: "Proteantecs", ats: comeet, token: "D5.00E|5DE23340029121D562912029122334", il_verified: true}
+  - {name: "Reflectiz", ats: comeet, token: "CA.008|AC84B7840B035E82058AC8564035E856402058", il_verified: true}
   - {name: "Scodix", ats: comeet, token: "77.00D|77D2CEE16773BE8436525711677436503BE8", il_verified: true}
+  - {name: "Scytale", ats: comeet, token: "2A.009|A29471F1E7B5B7128A432CDA2928A45B711452", il_verified: true}
   - {name: "Seemplicity", ats: comeet, token: "67.00D|76D2C8E164733FB33FB1DB442D5042D5EDA", il_verified: true}
   - {name: "Silverfort", ats: comeet, token: "54.007|45715B315B38AE22B8D051A0A457D051E61", il_verified: true}
   - {name: "Stampli", ats: comeet, token: "F6.007|6F729CADEE3EAF06F71BDC29CA22D314E5", il_verified: true}
@@ -72,6 +78,8 @@ companies:
   - {name: "Clutch Security", ats: greenhouse, token: clutch, il_verified: false}
   - {name: "Comet Israel", ats: greenhouse, token: comet, il_verified: true}
   - {name: "Connecteam", ats: greenhouse, token: connecteam, il_verified: true}
+  - {name: "Cortica", ats: greenhouse, token: cortica, il_verified: true}
+  - {name: "Cymulate", ats: greenhouse, token: cymulate, il_verified: true}
   - {name: "Descope", ats: greenhouse, token: descope, il_verified: true}
   - {name: "Duda", ats: greenhouse, token: duda, il_verified: true}
   - {name: "Electreon", ats: greenhouse, token: electreon, il_verified: true}
@@ -79,6 +87,7 @@ companies:
   - {name: "Forter", ats: greenhouse, token: forter, il_verified: true}
   - {name: "Gong", ats: greenhouse, token: gongio, il_verified: true}
   - {name: "Hippo", ats: greenhouse, token: hippo70, il_verified: false}
+  - {name: "Honeycomb Insurance", ats: greenhouse, token: honeycombinsurance, il_verified: true}
   - {name: "IAI", ats: greenhouse, token: iai, il_verified: false}
   - {name: "Island", ats: greenhouse, token: island, il_verified: true}
   - {name: "JFrog", ats: greenhouse, token: jfrog, il_verified: true}
@@ -94,9 +103,11 @@ companies:
   - {name: "Payoneer", ats: greenhouse, token: payoneer, il_verified: true}
   - {name: "Remote Israel", ats: greenhouse, token: remote, il_verified: false}
   - {name: "Riskified", ats: greenhouse, token: riskified, il_verified: true}
+  - {name: "SafeBreach", ats: greenhouse, token: safebreach, il_verified: true}
   - {name: "Salt Security", ats: greenhouse, token: saltsecurity, il_verified: true}
   - {name: "Similarweb", ats: greenhouse, token: similarweb, il_verified: true}
   - {name: "SolarWinds Israel", ats: greenhouse, token: solarwinds, il_verified: false}
+  - {name: "Sweet Security", ats: greenhouse, token: sweetsecurity, il_verified: true}
   - {name: "Taboola", ats: greenhouse, token: taboola, il_verified: true}
   - {name: "Tipalti", ats: greenhouse, token: tipaltisolutions, il_verified: true}
   - {name: "Token Security", ats: greenhouse, token: tokensecurity, il_verified: true}
@@ -107,8 +118,10 @@ companies:
   - {name: "Wing Security", ats: greenhouse, token: wing, il_verified: false}
   - {name: "Wiz", ats: greenhouse, token: wizinc, il_verified: true}
   - {name: "Yotpo", ats: greenhouse, token: yotpo, il_verified: true}
+  - {name: "Zscaler IL", ats: greenhouse, token: zscaler, il_verified: true}
   - {name: "Cloudinary", ats: lever, token: cloudinary, il_verified: true}
   - {name: "Firemon Israel", ats: lever, token: firemon, il_verified: false}
+  - {name: "Houzz", ats: lever, token: houzz, il_verified: true}
   - {name: "Indeni", ats: lever, token: bluecatnetworks, il_verified: false}
   - {name: "Lendbuzz", ats: lever, token: lendbuzz, il_verified: true}
   - {name: "Logz.io", ats: lever, token: logz, il_verified: true}
@@ -116,6 +129,7 @@ companies:
   - {name: "Velo3D", ats: lever, token: velo3d, il_verified: false}
   - {name: "WalkMe", ats: lever, token: walkme, il_verified: true}
   - {name: "Waterfall Security", ats: lever, token: waterfall, il_verified: false}
+  - {name: "Zadara", ats: lever, token: Zadara, il_verified: true}
   - {name: "Armis", ats: smartrecruiters, token: armis, il_verified: true}
   - {name: "Check Point", ats: smartrecruiters, token: CheckPointSoftwareTechnologies2, il_verified: true}
   - {name: "Fiverr", ats: smartrecruiters, token: fiverr, il_verified: false}

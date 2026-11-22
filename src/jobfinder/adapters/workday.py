@@ -25,8 +25,8 @@ MAX_PAGES = 15
 # its own returned almost none when 12 boards were fetched at once. This caps
 # Workday to two in-flight requests across the whole run, independently of the
 # global concurrency limit, and paces successive pages.
-_GATE = asyncio.Semaphore(2)
-_PAGE_DELAY = 0.4
+_GATE = asyncio.Semaphore(1)
+_PAGE_DELAY = 1.0
 
 # externalPath looks like "/job/Israel-Yokneam/Senior-Engineer_JR123".
 _PATH_LOC = re.compile(r"^/job/([^/]+)/")
@@ -46,6 +46,10 @@ class Workday:
     # Listings carry no description.
     needs_detail = True
 
+    def __init__(self, page_delay: float = _PAGE_DELAY):
+        # Injectable so tests do not pay the real pacing delay.
+        self.page_delay = page_delay
+
     @staticmethod
     def _parts(token: str):
         bits = (token or "").split("|")
@@ -62,11 +66,11 @@ class Workday:
         url = LIST.format(tenant=tenant, dc=dc, site=site)
         jobs: list[Job] = []
         for page in range(MAX_PAGES):
-            if page:
-                await asyncio.sleep(_PAGE_DELAY)
+            if page and self.page_delay:
+                await asyncio.sleep(self.page_delay)
             async with _GATE:
                 data = await fetch_json(
-                    client, url, method="POST",
+                    client, url, method="POST", retries=4, backoff=2.0,
                     # Searching by country keeps huge global boards tractable;
                     # each result is re-checked against the path below.
                     json_body={"appliedFacets": {}, "limit": PAGE,
@@ -109,8 +113,11 @@ class Workday:
             return job
         tenant, dc, site = parts
         async with _GATE:
-            data = await fetch_json(client, DETAIL.format(
-                tenant=tenant, dc=dc, site=site, path=job.job_id))
+            data = await fetch_json(
+                client,
+                DETAIL.format(tenant=tenant, dc=dc, site=site, path=job.job_id),
+                retries=3, backoff=2.0,
+            )
         if not data:
             return job
         info = data.get("jobPostingInfo") or {}
