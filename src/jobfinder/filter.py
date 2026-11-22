@@ -42,3 +42,61 @@ def is_israel(job: Job) -> bool:
     if _FOREIGN_RE.search(text):
         return False
     return True
+
+
+_SENIOR_RE = re.compile(
+    r"\b("
+    r"senior|sr\.?|staff|principal|lead|leader|head|director|vp|"
+    r"vice\s+president|chief|manager|architect|expert|distinguished|fellow"
+    r")\b",
+    re.I,
+)
+
+_EXCLUDE_FUNCTION_RE = re.compile(
+    r"\b("
+    r"sales|marketing|recruit\w*|talent|hr\b|human\s+resources|finance|"
+    r"controller|legal|counsel|customer\s+success|account\s+executive|"
+    r"bdr|sdr|office\s+manager|designer|design|content|copywriter|"
+    r"compensation|benefits|procurement|facilities|executive\s+assistant"
+    r")\b",
+    re.I,
+)
+
+_BACKEND_RE = re.compile(
+    r"\b("
+    r"backend|back[\s-]end|full[\s-]?stack|fullstack|software\s+engineer|"
+    r"software\s+developer|swe\b|server[\s-]side|platform\s+engineer|"
+    r"python|java\b|node(?:\.js)?|golang|\bgo\b|c#|\.net|ruby|scala|kotlin|"
+    r"infrastructure\s+engineer|developer"
+    r")\b",
+    re.I,
+)
+
+_DATA_RE = re.compile(
+    r"\b("
+    r"data\s+engineer|data\s+analyst|data\s+scientist|big\s+data|"
+    r"machine\s+learning|\bml\b|ai\s+engineer|\bai\b|deep\s+learning|"
+    r"nlp\b|computer\s+vision|algorithm|research\s+engineer|analytics|"
+    r"bi\s+developer|mlops"
+    r")\b",
+    re.I,
+)
+
+
+def seniority_ok(title: str) -> bool:
+    """False when the title is explicitly senior or a leadership role."""
+    return not _SENIOR_RE.search(title or "")
+
+
+def role_family(title: str) -> str | None:
+    """Return 'backend', 'data', or None when out of scope."""
+    t = title or ""
+    if _EXCLUDE_FUNCTION_RE.search(t):
+        return None
+    # Data is checked first: "Data Engineer" also matches the backend
+    # "engineer" pattern, and the more specific family should win.
+    if _DATA_RE.search(t):
+        return "data"
+    if _BACKEND_RE.search(t):
+        return "backend"
+    return None
