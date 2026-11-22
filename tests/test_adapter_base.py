@@ -43,3 +43,14 @@ async def test_returns_none_on_malformed_json():
     respx.get("https://x.test/j").mock(return_value=httpx.Response(200, text="not json"))
     async with httpx.AsyncClient() as c:
         assert await fetch_json(c, "https://x.test/j", retries=1, backoff=0) is None
+
+
+@respx.mock
+async def test_retries_zero_still_makes_one_request():
+    """`retries` counts attempts; 0 must not silently skip the request."""
+    route = respx.get("https://x.test/j").mock(
+        return_value=httpx.Response(200, json={"ok": 3})
+    )
+    async with httpx.AsyncClient() as c:
+        assert await fetch_json(c, "https://x.test/j", retries=0) == {"ok": 3}
+    assert route.call_count == 1

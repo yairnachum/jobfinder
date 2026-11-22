@@ -32,7 +32,9 @@ async def fetch_json(
     One bad board must never abort a whole run, so every failure mode
     collapses to None and is logged.
     """
-    for attempt in range(retries):
+    # `retries` counts total attempts; 0 would otherwise skip the request
+    # entirely and silently return None.
+    for attempt in range(max(1, retries)):
         try:
             resp = await client.request(
                 method, url, json=json_body,
