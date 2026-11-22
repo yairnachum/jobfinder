@@ -129,3 +129,17 @@ async def test_pending_entry_is_cleared_when_job_stops_matching(tmp_path, regist
                    {"fake": FakeAdapter([mk("1", title="Senior Backend Engineer")])},
                    FakeNotifier(), state_path=path)
     assert SeenStore(path).pending() == []
+
+
+def test_httpx_url_logging_is_suppressed(monkeypatch, tmp_path):
+    """httpx logs the full request URL at INFO, and the Telegram token lives
+    in that URL. On a public repo that would publish the token to CI logs."""
+    import logging as _logging
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "secret-token")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "1")
+    monkeypatch.setattr("sys.argv", ["watch", "--registry", "registry/companies.yaml",
+                                     "--profile", "config/profile.yaml"])
+    import jobfinder.watch as w
+    monkeypatch.setattr(w.asyncio, "run", lambda *a, **k: {"sent": 0})
+    w.main()
+    assert _logging.getLogger("httpx").level >= _logging.WARNING

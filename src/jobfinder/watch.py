@@ -119,6 +119,11 @@ async def run_once(
 
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    # httpx logs the full request URL at INFO, and the Telegram bot token is
+    # part of that URL. On a public repo that would publish the token into the
+    # Actions log on the first alert ever sent.
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
     ap = argparse.ArgumentParser(description="Poll ATS boards for junior roles.")
     ap.add_argument("--seed", action="store_true",
                     help="record all current jobs as seen without notifying")
