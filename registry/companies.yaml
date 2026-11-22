@@ -1,0 +1,47 @@
+# company → ATS board. Verified 2026-11-22.
+companies:
+  - {name: Wiz,                ats: greenhouse,      token: wizinc,           il_verified: true}
+  - {name: Cato Networks,      ats: greenhouse,      token: catonetworks,     il_verified: true}
+  - {name: AppsFlyer,          ats: greenhouse,      token: appsflyer,        il_verified: true}
+  - {name: Similarweb,         ats: greenhouse,      token: similarweb,       il_verified: true}
+  - {name: Payoneer,           ats: greenhouse,      token: payoneer,         il_verified: true}
+  - {name: JFrog,              ats: greenhouse,      token: jfrog,            il_verified: true}
+  - {name: Riskified,          ats: greenhouse,      token: riskified,        il_verified: true}
+  - {name: Taboola,            ats: greenhouse,      token: taboola,          il_verified: true}
+  - {name: Via,                ats: greenhouse,      token: via,              il_verified: true}
+  - {name: NICE,               ats: greenhouse,      token: nice,             il_verified: true}
+  - {name: Gong,               ats: greenhouse,      token: gongio,           il_verified: true}
+  - {name: Aidoc,              ats: greenhouse,      token: aidocmedical,     il_verified: true}
+  - {name: Tipalti,            ats: greenhouse,      token: tipaltisolutions, il_verified: true}
+  - {name: Transmit Security,  ats: greenhouse,      token: transmitsecurity, il_verified: true}
+  - {name: Forter,             ats: greenhouse,      token: forter,           il_verified: true}
+  - {name: Yotpo,              ats: greenhouse,      token: yotpo,            il_verified: true}
+  - {name: Axonius,            ats: greenhouse,      token: axonius,          il_verified: true}
+  - {name: Orca Security,      ats: greenhouse,      token: orcasecurity,     il_verified: true}
+  - {name: Apiiro,             ats: greenhouse,      token: apiiro,           il_verified: true}
+  - {name: BigID,              ats: greenhouse,      token: bigid,            il_verified: true}
+  - {name: Island,             ats: greenhouse,      token: island,           il_verified: true}
+  - {name: Torq,               ats: greenhouse,      token: torq,             il_verified: true}
+  - {name: Salt Security,      ats: greenhouse,      token: saltsecurity,     il_verified: true}
+  - {name: Optimove,           ats: greenhouse,      token: optimove,         il_verified: true}
+  - {name: Augury,             ats: greenhouse,      token: augury,           il_verified: true}
+  - {name: Lemonade,           ats: ashby,           token: lemonade,         il_verified: true}
+  - {name: Moon Active,        ats: ashby,           token: moonactive,       il_verified: true}
+  - {name: Simply,             ats: ashby,           token: simply,           il_verified: true}
+  - {name: HoneyBook,          ats: ashby,           token: honeybook,        il_verified: true}
+  - {name: Finout,             ats: ashby,           token: finout,           il_verified: true}
+  - {name: Redis,              ats: ashby,           token: redis,            il_verified: true}
+  - {name: Sweep,              ats: ashby,           token: sweep,            il_verified: true}
+  - {name: Singular,           ats: ashby,           token: singular,         il_verified: true}
+  - {name: Unit,               ats: ashby,           token: unit,             il_verified: true}
+  - {name: WalkMe,             ats: lever,           token: walkme,           il_verified: true}
+  - {name: Armis,              ats: smartrecruiters, token: armis,            il_verified: true}
+  - {name: Kaltura,            ats: smartrecruiters, token: kalturainc,       il_verified: true}
+  # Correctly identified boards with no Israeli opening at verification time.
+  - {name: Snyk,               ats: ashby,           token: Snyk,             il_verified: false}
+  - {name: Verint,             ats: ashby,           token: verint,           il_verified: false}
+  - {name: Pagaya,             ats: greenhouse,      token: pagaya,           il_verified: false}
+  - {name: Descope,            ats: greenhouse,      token: descope,          il_verified: false}
+  - {name: Bringg,             ats: greenhouse,      token: bringg,           il_verified: false}
+  - {name: Hibob,              ats: smartrecruiters, token: hibob,            il_verified: false}
+  - {name: Fiverr,             ats: smartrecruiters, token: fiverr,           il_verified: false}

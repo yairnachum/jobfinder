@@ -1,0 +1,6 @@
+# Tunables. Edit freely; no code change required.
+max_years_experience: 3
+state_path: state/seen.jsonl
+seen_max_age_days: 120
+# Max simultaneous outbound HTTP requests.
+concurrency: 12
