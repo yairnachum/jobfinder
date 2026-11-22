@@ -4,17 +4,17 @@ from jobfinder.adapters import ADAPTERS, get_adapter
 
 
 def test_all_four_adapters_registered():
-    assert set(ADAPTERS) == {"greenhouse", "ashby", "lever", "smartrecruiters"}
+    assert set(ADAPTERS) == {"greenhouse", "ashby", "lever", "smartrecruiters", "comeet"}
 
 
-@pytest.mark.parametrize("name", ["greenhouse", "ashby", "lever", "smartrecruiters"])
+@pytest.mark.parametrize("name", ["greenhouse", "ashby", "lever", "smartrecruiters", "comeet"])
 def test_adapter_name_matches_key(name):
     assert get_adapter(name).name == name
 
 
 def test_only_smartrecruiters_needs_detail():
     assert get_adapter("smartrecruiters").needs_detail is True
-    for name in ("greenhouse", "ashby", "lever"):
+    for name in ("greenhouse", "ashby", "lever", "comeet"):
         assert get_adapter(name).needs_detail is False
 
 

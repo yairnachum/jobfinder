@@ -1,47 +1,130 @@
-# company → ATS board. Verified 2026-11-22.
+# company -> ATS board. Discovered by slug probing plus careers-page
+# fingerprinting, then verified against the live API.
+# comeet tokens are 'uid|token'; both values are published publicly
+# in the company's own careers page markup.
 companies:
-  - {name: Wiz,                ats: greenhouse,      token: wizinc,           il_verified: true}
-  - {name: Cato Networks,      ats: greenhouse,      token: catonetworks,     il_verified: true}
-  - {name: AppsFlyer,          ats: greenhouse,      token: appsflyer,        il_verified: true}
-  - {name: Similarweb,         ats: greenhouse,      token: similarweb,       il_verified: true}
-  - {name: Payoneer,           ats: greenhouse,      token: payoneer,         il_verified: true}
-  - {name: JFrog,              ats: greenhouse,      token: jfrog,            il_verified: true}
-  - {name: Riskified,          ats: greenhouse,      token: riskified,        il_verified: true}
-  - {name: Taboola,            ats: greenhouse,      token: taboola,          il_verified: true}
-  - {name: Via,                ats: greenhouse,      token: via,              il_verified: true}
-  - {name: NICE,               ats: greenhouse,      token: nice,             il_verified: true}
-  - {name: Gong,               ats: greenhouse,      token: gongio,           il_verified: true}
-  - {name: Aidoc,              ats: greenhouse,      token: aidocmedical,     il_verified: true}
-  - {name: Tipalti,            ats: greenhouse,      token: tipaltisolutions, il_verified: true}
-  - {name: Transmit Security,  ats: greenhouse,      token: transmitsecurity, il_verified: true}
-  - {name: Forter,             ats: greenhouse,      token: forter,           il_verified: true}
-  - {name: Yotpo,              ats: greenhouse,      token: yotpo,            il_verified: true}
-  - {name: Axonius,            ats: greenhouse,      token: axonius,          il_verified: true}
-  - {name: Orca Security,      ats: greenhouse,      token: orcasecurity,     il_verified: true}
-  - {name: Apiiro,             ats: greenhouse,      token: apiiro,           il_verified: true}
-  - {name: BigID,              ats: greenhouse,      token: bigid,            il_verified: true}
-  - {name: Island,             ats: greenhouse,      token: island,           il_verified: true}
-  - {name: Torq,               ats: greenhouse,      token: torq,             il_verified: true}
-  - {name: Salt Security,      ats: greenhouse,      token: saltsecurity,     il_verified: true}
-  - {name: Optimove,           ats: greenhouse,      token: optimove,         il_verified: true}
-  - {name: Augury,             ats: greenhouse,      token: augury,           il_verified: true}
-  - {name: Lemonade,           ats: ashby,           token: lemonade,         il_verified: true}
-  - {name: Moon Active,        ats: ashby,           token: moonactive,       il_verified: true}
-  - {name: Simply,             ats: ashby,           token: simply,           il_verified: true}
-  - {name: HoneyBook,          ats: ashby,           token: honeybook,        il_verified: true}
-  - {name: Finout,             ats: ashby,           token: finout,           il_verified: true}
-  - {name: Redis,              ats: ashby,           token: redis,            il_verified: true}
-  - {name: Sweep,              ats: ashby,           token: sweep,            il_verified: true}
-  - {name: Singular,           ats: ashby,           token: singular,         il_verified: true}
-  - {name: Unit,               ats: ashby,           token: unit,             il_verified: true}
-  - {name: WalkMe,             ats: lever,           token: walkme,           il_verified: true}
-  - {name: Armis,              ats: smartrecruiters, token: armis,            il_verified: true}
-  - {name: Kaltura,            ats: smartrecruiters, token: kalturainc,       il_verified: true}
-  # Correctly identified boards with no Israeli opening at verification time.
-  - {name: Snyk,               ats: ashby,           token: Snyk,             il_verified: false}
-  - {name: Verint,             ats: ashby,           token: verint,           il_verified: false}
-  - {name: Pagaya,             ats: greenhouse,      token: pagaya,           il_verified: false}
-  - {name: Descope,            ats: greenhouse,      token: descope,          il_verified: false}
-  - {name: Bringg,             ats: greenhouse,      token: bringg,           il_verified: false}
-  - {name: Hibob,              ats: smartrecruiters, token: hibob,            il_verified: false}
-  - {name: Fiverr,             ats: smartrecruiters, token: fiverr,           il_verified: false}
+  - {name: "Authomize", ats: ashby, token: delinea, il_verified: false}
+  - {name: "Bynder Israel", ats: ashby, token: bynder, il_verified: false}
+  - {name: "Eleos Health", ats: ashby, token: eleos, il_verified: false}
+  - {name: "Finout", ats: ashby, token: finout, il_verified: true}
+  - {name: "HoneyBook", ats: ashby, token: honeybook, il_verified: true}
+  - {name: "Lemonade", ats: ashby, token: lemonade, il_verified: true}
+  - {name: "Minerva Labs", ats: ashby, token: minerva, il_verified: false}
+  - {name: "Moon Active", ats: ashby, token: moonactive, il_verified: true}
+  - {name: "Oligo Security", ats: ashby, token: oligo, il_verified: false}
+  - {name: "Orca Security", ats: ashby, token: orca, il_verified: false}
+  - {name: "Pinecone", ats: ashby, token: pinecone, il_verified: false}
+  - {name: "Redis", ats: ashby, token: redis, il_verified: true}
+  - {name: "Scribe Security", ats: ashby, token: scribe, il_verified: false}
+  - {name: "Simply", ats: ashby, token: simply, il_verified: true}
+  - {name: "Singular", ats: ashby, token: singular, il_verified: true}
+  - {name: "Snyk", ats: ashby, token: Snyk, il_verified: false}
+  - {name: "Snyk", ats: ashby, token: snyk, il_verified: false}
+  - {name: "Sweep", ats: ashby, token: sweep, il_verified: true}
+  - {name: "Unit", ats: ashby, token: unit, il_verified: true}
+  - {name: "Velocity Global Israel", ats: ashby, token: pebl, il_verified: false}
+  - {name: "Verint", ats: ashby, token: verint, il_verified: false}
+  - {name: "Webflow Israel", ats: ashby, token: webflow, il_verified: false}
+  - {name: "Zafran", ats: ashby, token: zafran-security, il_verified: true}
+  - {name: "AI21 Labs", ats: comeet, token: "E6.001|6E12946DC230276E13DE93708294637083708", il_verified: true}
+  - {name: "Aqua Security", ats: comeet, token: "91.001|191644966966644E194B3191644644", il_verified: true}
+  - {name: "Arbe", ats: comeet, token: "C6.001|6C12886D821B0414432886144328862F472F47", il_verified: true}
+  - {name: "Ceragon", ats: comeet, token: "D3.003|3D3131FF4C01AC57A61AC51E98131FF4C", il_verified: true}
+  - {name: "Checkmarx", ats: comeet, token: "C0.008|C8320190002581902584B0708", il_verified: true}
+  - {name: "Cognyte", ats: comeet, token: "F2.009|2F9EDD2F92F911D61AC12F914CF11D62F9", il_verified: true}
+  - {name: "Cycode", ats: comeet, token: "A8.00D|8AD340E3CBB3CBB22B445680340E22B44568", il_verified: true}
+  - {name: "Cynet", ats: comeet, token: "33.00D|33D103133D19E8136E1D25103133D10311D25", il_verified: true}
+  - {name: "Earnix", ats: comeet, token: "93.00B|39B1207AD1AD1736736120739B193D736", il_verified: true}
+  - {name: "Elementor", ats: comeet, token: "A3.00F|3AF126BB0D161A3AF161A00B0D126B", il_verified: true}
+  - {name: "Insightec", ats: comeet, token: "4A.004|A4447DC2910A44148829105C6452201ECC3354", il_verified: true}
+  - {name: "Minute Media", ats: comeet, token: "45.00A|54A1A7225062A50FDE2F9A1FBC01FBC1528", il_verified: true}
+  - {name: "Moovit", ats: comeet, token: "63.007|36711036CE11031E9F146A1B38367A356CE", il_verified: true}
+  - {name: "Nagomi", ats: comeet, token: "89.00B|98B42CD98B98B4C5855E3262C262C262C3942", il_verified: true}
+  - {name: "Nanox", ats: comeet, token: "43.00F|34F108B69E34F108B13DA17299ED13DAD3C", il_verified: true}
+  - {name: "Navina", ats: comeet, token: "E6.00C|6EC2988DD837606EC376014C43E4C376014C4", il_verified: true}
+  - {name: "Nym Health", ats: comeet, token: "46.005|645259E645C8A32281F59259E1F596453228", il_verified: true}
+  - {name: "Ox Security", ats: comeet, token: "F8.006|8F635C447B035C42CCE2CCE23D83EBA35C48F6", il_verified: true}
+  - {name: "Pentera", ats: comeet, token: "C5.00D|5CD1D013435289B343501D012E682E68289B", il_verified: true}
+  - {name: "Percepto", ats: comeet, token: "44.000|440154015404400088019802640880", il_verified: false}
+  - {name: "Personetics", ats: comeet, token: "83.00A|38A11B2A9E018C60153C714A9E38A", il_verified: true}
+  - {name: "Playbuzz", ats: comeet, token: "F0.005|F53D41EA5BE5BE89D1EA2DF7A8F5", il_verified: true}
+  - {name: "Proteantecs", ats: comeet, token: "D5.00E|5DE23340029121D562912029122334", il_verified: true}
+  - {name: "Scodix", ats: comeet, token: "77.00D|77D2CEE16773BE8436525711677436503BE8", il_verified: true}
+  - {name: "Seemplicity", ats: comeet, token: "67.00D|76D2C8E164733FB33FB1DB442D5042D5EDA", il_verified: true}
+  - {name: "Silverfort", ats: comeet, token: "54.007|45715B315B38AE22B8D051A0A457D051E61", il_verified: true}
+  - {name: "Stampli", ats: comeet, token: "F6.007|6F729CADEE3EAF06F71BDC29CA22D314E5", il_verified: true}
+  - {name: "Tailor Brands", ats: comeet, token: "94.009|49916FD16FD24C89320DCB296116FD2961", il_verified: true}
+  - {name: "Taranis", ats: comeet, token: "34.003|43314FF14FF043314FF10CC10CC25CB866", il_verified: false}
+  - {name: "Trullion", ats: comeet, token: "07.000|7002A00E003F002A007002A0002A002A00", il_verified: true}
+  - {name: "Upwind", ats: comeet, token: "49.004|94440DC0944094401BCC12882510", il_verified: true}
+  - {name: "Wiliot", ats: comeet, token: "F6.003|6F329B2DE6379829B229B2037983E8B3E8B", il_verified: true}
+  - {name: "Zesty", ats: comeet, token: "06.000|600240001E00030003000300024001E00", il_verified: true}
+  - {name: "Abnormal Israel", ats: greenhouse, token: abnormalsecurity, il_verified: false}
+  - {name: "Aidoc", ats: greenhouse, token: aidocmedical, il_verified: true}
+  - {name: "Apiiro", ats: greenhouse, token: apiiro, il_verified: true}
+  - {name: "AppsFlyer", ats: greenhouse, token: appsflyer, il_verified: true}
+  - {name: "Augury", ats: greenhouse, token: augury, il_verified: true}
+  - {name: "Axonius", ats: greenhouse, token: axonius, il_verified: true}
+  - {name: "BigID", ats: greenhouse, token: bigid, il_verified: true}
+  - {name: "Bringg", ats: greenhouse, token: bringg, il_verified: false}
+  - {name: "Britive", ats: greenhouse, token: britive, il_verified: false}
+  - {name: "Cato Networks", ats: greenhouse, token: catonetworks, il_verified: true}
+  - {name: "ClearML", ats: greenhouse, token: clear, il_verified: true}
+  - {name: "Clutch Security", ats: greenhouse, token: clutch, il_verified: false}
+  - {name: "Comet Israel", ats: greenhouse, token: comet, il_verified: true}
+  - {name: "Connecteam", ats: greenhouse, token: connecteam, il_verified: true}
+  - {name: "Descope", ats: greenhouse, token: descope, il_verified: true}
+  - {name: "Duda", ats: greenhouse, token: duda, il_verified: true}
+  - {name: "Electreon", ats: greenhouse, token: electreon, il_verified: true}
+  - {name: "Ermetic", ats: greenhouse, token: tenableinc, il_verified: true}
+  - {name: "Forter", ats: greenhouse, token: forter, il_verified: true}
+  - {name: "Gong", ats: greenhouse, token: gongio, il_verified: true}
+  - {name: "Hippo", ats: greenhouse, token: hippo70, il_verified: false}
+  - {name: "IAI", ats: greenhouse, token: iai, il_verified: false}
+  - {name: "Island", ats: greenhouse, token: island, il_verified: true}
+  - {name: "JFrog", ats: greenhouse, token: jfrog, il_verified: true}
+  - {name: "K Health", ats: greenhouse, token: khealthcareers, il_verified: true}
+  - {name: "NewRelic Israel", ats: greenhouse, token: newrelic, il_verified: true}
+  - {name: "NICE", ats: greenhouse, token: nice, il_verified: true}
+  - {name: "Nozomi Israel", ats: greenhouse, token: nozominetworks, il_verified: false}
+  - {name: "Nucleus Security", ats: greenhouse, token: nucleus, il_verified: false}
+  - {name: "Oasis Security", ats: greenhouse, token: oasis, il_verified: false}
+  - {name: "Optimove", ats: greenhouse, token: optimove, il_verified: true}
+  - {name: "Orca Security", ats: greenhouse, token: orcasecurity, il_verified: true}
+  - {name: "Pagaya", ats: greenhouse, token: pagaya, il_verified: false}
+  - {name: "Payoneer", ats: greenhouse, token: payoneer, il_verified: true}
+  - {name: "Remote Israel", ats: greenhouse, token: remote, il_verified: false}
+  - {name: "Riskified", ats: greenhouse, token: riskified, il_verified: true}
+  - {name: "Salt Security", ats: greenhouse, token: saltsecurity, il_verified: true}
+  - {name: "Similarweb", ats: greenhouse, token: similarweb, il_verified: true}
+  - {name: "SolarWinds Israel", ats: greenhouse, token: solarwinds, il_verified: false}
+  - {name: "Taboola", ats: greenhouse, token: taboola, il_verified: true}
+  - {name: "Tipalti", ats: greenhouse, token: tipaltisolutions, il_verified: true}
+  - {name: "Token Security", ats: greenhouse, token: tokensecurity, il_verified: true}
+  - {name: "Torq", ats: greenhouse, token: torq, il_verified: true}
+  - {name: "Transmit Security", ats: greenhouse, token: transmitsecurity, il_verified: true}
+  - {name: "Vectara Israel", ats: greenhouse, token: vectara, il_verified: false}
+  - {name: "Via", ats: greenhouse, token: via, il_verified: true}
+  - {name: "Wing Security", ats: greenhouse, token: wing, il_verified: false}
+  - {name: "Wiz", ats: greenhouse, token: wizinc, il_verified: true}
+  - {name: "Yotpo", ats: greenhouse, token: yotpo, il_verified: true}
+  - {name: "Cloudinary", ats: lever, token: cloudinary, il_verified: true}
+  - {name: "Firemon Israel", ats: lever, token: firemon, il_verified: false}
+  - {name: "Indeni", ats: lever, token: bluecatnetworks, il_verified: false}
+  - {name: "Lendbuzz", ats: lever, token: lendbuzz, il_verified: true}
+  - {name: "Logz.io", ats: lever, token: logz, il_verified: true}
+  - {name: "Rise", ats: lever, token: rise, il_verified: false}
+  - {name: "Velo3D", ats: lever, token: velo3d, il_verified: false}
+  - {name: "WalkMe", ats: lever, token: walkme, il_verified: true}
+  - {name: "Waterfall Security", ats: lever, token: waterfall, il_verified: false}
+  - {name: "Armis", ats: smartrecruiters, token: armis, il_verified: true}
+  - {name: "Check Point", ats: smartrecruiters, token: CheckPointSoftwareTechnologies2, il_verified: true}
+  - {name: "Fiverr", ats: smartrecruiters, token: fiverr, il_verified: false}
+  - {name: "Gloat", ats: smartrecruiters, token: gloat, il_verified: false}
+  - {name: "Gong", ats: smartrecruiters, token: gong, il_verified: false}
+  - {name: "Hibob", ats: smartrecruiters, token: hibob, il_verified: false}
+  - {name: "Joonko", ats: smartrecruiters, token: joonko, il_verified: true}
+  - {name: "Kaltura", ats: smartrecruiters, token: kalturainc, il_verified: true}
+  - {name: "Otorio", ats: smartrecruiters, token: ServiceNow, il_verified: true}
+  - {name: "Skybox Security", ats: smartrecruiters, token: skybox, il_verified: false}
+  - {name: "Trigo", ats: smartrecruiters, token: trigo, il_verified: true}

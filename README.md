@@ -6,7 +6,7 @@ matching junior backend / data roles to Telegram, usually before they reach Link
 ## How it works
 
 Israeli hi-tech companies don't hand-build their careers pages — they run on an ATS
-(Greenhouse, Ashby, Lever, SmartRecruiters), and every one of those exposes a public
+(Greenhouse, Ashby, Lever, SmartRecruiters, Comeet), and every one of those exposes a public
 JSON API. The ATS API *is* the careers page's backend, so a posting is visible there
 the moment it goes live, before aggregators pick it up.
 
@@ -39,7 +39,7 @@ experience requirement are included).
 
 ```bash
 uv venv --python 3.12 && uv pip install -e ".[dev]"
-uv run pytest -q                    # 178 tests, no network needed
+uv run pytest -q                    # 185 tests, no network needed
 uv run python scripts/smoke.py      # dry run against the live boards, sends nothing
 ```
 
@@ -72,16 +72,21 @@ rather than losing them.
 
 ## Coverage
 
-Phase 1 covers 44 verified boards across four ATS platforms — a live run currently
-fetches ~1,500 postings.
+125 verified boards across five ATS platforms. A live run fetches ~4,500 postings.
 
-Many large Israeli employers (Monday, Wix, Rapyd, CyberArk, Checkmarx, Playtika,
-Mobileye) use **Comeet**, which is not yet supported. That is the single biggest
-coverage win available and is planned for Phase 3.
+Boards were found by probing each ATS API with candidate slugs and, where that
+failed, fingerprinting the company's careers page — which is the only way to
+recover Comeet's `uid`+`token` pair. Every board was then verified against the
+live API; acquisition artifacts (a careers page pointing at the acquirer's
+board) and duplicate boards were dropped.
+
+Still unsupported: **Workday, Workable, Recruitee, Breezy, Teamtailor**. Few
+Israeli companies appeared on them during discovery, so they are low priority.
+The larger remaining gap is companies with no discoverable board at all — 272 of
+the 419 scanned, many of which self-host or use an ATS we do not fingerprint.
 
 ## Roadmap
 
-- **Phase 2** — the Prospector: automated company discovery to take the registry past
-  1,000 boards, plus dead-board tracking.
-- **Phase 3** — Comeet, Workday, Workable, Recruitee, Breezy, Teamtailor adapters.
-- **Phase 4** — Claude-based fit scoring of each match against your CV.
+- **Next** — widen the company list past 419 and add Workday/Workable adapters;
+  add dead-board tracking so boards that go stale are re-discovered.
+- **Later** — Claude-based fit scoring of each match against your CV.

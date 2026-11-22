@@ -1,0 +1,314 @@
+[
+ {
+  "name": "Backend Engineer",
+  "department": "Engineering",
+  "email": "cycode.FF.049@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/backend-engineer/FF.049",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/backend-engineer/FF.049",
+  "url_active_page": "https://cycode.com/careers/position/?pos_id=FF.049",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "FF.049",
+  "location": {
+   "name": "Tel Aviv, Israel",
+   "country": "IL",
+   "city": "Tel Aviv-Yafo",
+   "state": "Tel Aviv District",
+   "postal_code": "",
+   "street_name": "12 Leonardo da Vinci Street",
+   "arrival_instructions": "<p>We are located at <span>12 Leonardo da Vinci Street</span>, 8th-floor.<br/></p><p><br/></p><p><br/></p>",
+   "street_number": "45",
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "FD.305",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://cycode.com/careers/position/?pos_id=FF.049",
+  "picture_url": null,
+  "time_updated": "2026-11-22T17:53:33Z",
+  "company_name": "Cycode",
+  "is_internal": false,
+  "linkedin_job_posting_id": null,
+  "workplace_type": "Hybrid",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/A8.00D/positions/FF.049?token=8AD340E3CBB3CBB22B445680340E22B44568",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p>This is a unique opportunity to join a fast-growing cybersecurity company at the forefront of securing AI-driven software development.</p><p>Cycode is redefining how organizations secure software in the age of AI-driven development. Our Agentic Development Security Platform helps enterprises secure the entire software development lifecycle, from prompt to runtime, through AI governance, deep contextual analysis, and autonomous security.</p><p>Powered by Cycode AI and Maestro, our orchestration engine, we help organizations identify real risks, prioritize actual exposure, and remediate vulnerabilities at AI speed. Trusted by Fortune 500 enterprises worldwide, Cycode is recognized as a market leader in Application Security, Software Supply Chain Security, and ASPM.</p><p>Founded in 2019 and backed by leading investors including Insight Partners and YL Ventures, Cycode is building the future of secure AI-native software development.</p><p>As a Backend Developer, you will take part in all stages of development, from architecture and design to deployment and production ownership. You will work closely with developers, product managers, and designers to build scalable, high-quality systems and influence technological and architectural decisions along the way.</p><p>Our stack includes .NET Core / C#, MongoDB, Redis, Kafka, PostgreSQL, Kubernetes, ArangoDB, Python, Terraform, Docker, and fully CI/CD-driven environments.</p>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">4+ years of experience with microservices development</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Deep understanding of microservices architecture and cloud-native development</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience designing and building asynchronous systems and working with message queues/event-driven architectures</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience with databases</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience in developing a SAAS product</span></li></ul><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Advantages:</span></p><ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience in developing a security-related SAAS product.</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience with continuous integration and deployment (CI/CD)</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">B.Sc in Computer Science/Software Engineering or related field</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Familiarity with the GraphQL framework</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Familiarity with the Graph Databases</span></li></ul><p class=\"editor-paragraph\"><br></p>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "Channel Account Manager - East",
+  "department": "Sales",
+  "email": "cycode.4C.37D@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/channel-account-manager---east/4C.37D",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/channel-account-manager---east/4C.37D",
+  "url_active_page": "https://cycode.com/careers/position/?pos_id=4C.37D",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "4C.37D",
+  "location": {
+   "name": "East Coast, USA (Remote)",
+   "country": "US",
+   "city": "New York",
+   "state": "NY",
+   "postal_code": "",
+   "street_name": "5th Avenue",
+   "arrival_instructions": "",
+   "street_number": "",
+   "timezone": "America/New_York",
+   "location_uid": "FD.30B",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://cycode.com/careers/position/?pos_id=4C.37D",
+  "picture_url": null,
+  "time_updated": "2026-11-22T17:53:32Z",
+  "company_name": "Cycode",
+  "is_internal": false,
+  "linkedin_job_posting_id": null,
+  "workplace_type": "Remote",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/A8.00D/positions/4C.37D?token=8AD340E3CBB3CBB22B445680340E22B44568",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">This is a unique opportunity to join a fast-growing cybersecurity company at the forefront of securing AI-driven software development.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Cycode is the leader in agentic development security, with a mission to protect where AI risk is born. Our Agentic Development Security Platform secures the entire software development lifecycle in the age of AI, bringing AI governance, AI code security, software supply chain security, and ASPM together in one connected platform. Powered by Cycode AI and Maestro, our agentic orchestration engine, we help organizations identify real risk, prioritize what matters, and remediate critical vulnerabilities up to 17x faster.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Trusted by Fortune 500 enterprises worldwide, Cycode was named a Leader in the 2026 Gartner® Magic Quadrant™ for Software Supply Chain Security and in the IDC MarketScape for ASPM. Founded in 2019 and backed by leading investors including Insight Partners and YL Ventures, Cycode is building the future of secure, AI-native software development.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">We are looking for a Channel Account Manager (CAM) with a proven track record to join our US sales team and own our channel business across the East region. This role reports to the Head of Global Channels and is a strategic member of the team.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">As a CAM, you will build and grow Cycode's partner ecosystem in your territory. You will deepen relationships with our key partners, recruit and activate new ones, and turn them into a meaningful, repeatable source of pipeline and revenue. You will work hand in hand with our regional sales teams to drive joint wins, and you will own partner-sourced and partner-influenced revenue in your territory.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">To be successful in this role, you must bring strong, existing relationships with leading security partners in your region. You should be equally comfortable building executive relationships with partner leadership and working side by side with partner sellers on specific opportunities. This is a builder role: you will have real ownership and a direct impact on how Cycode goes to market through partners.</span></p><h3 class=\"editor-heading-h3\"><span style=\"white-space: pre-wrap;\">Key Responsibilities</span></h3><ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Own the channel business in your territory, including partner-sourced pipeline, partner-influenced revenue, and quota attainment.</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Manage and grow relationships with key strategic partners, including GuidePoint Security, Optiv, and Trace3.</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Recruit and onboard new partners, including VARs, MSSPs, and system integrators, with a focus on partners that can drive meaningful AppSec and DevSecOps business.</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Build and execute joint business plans with key partners, including targets, account mapping, marketing activities, and enablement milestones.</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Enable partner sales and technical teams to position, sell, and demo Cycode's platform, including Cycode AI, Maestro, and our agentic workflows.</span></li><li value=\"6\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Build strong seller-to-seller relationships between partner reps and Cycode's regional sales teams, and drive collaboration on account planning and joint opportunities.</span></li><li value=\"7\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Generate net-new pipeline through partner-led campaigns, events, and joint go-to-market activities.</span></li><li value=\"8\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Work closely with Cycode's sales leadership to align on territory strategy, deal registration, and rules of engagement.</span></li><li value=\"9\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Run regular business reviews (QBRs) with partners to track performance, address gaps, and identify growth opportunities.</span></li><li value=\"10\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Act as the partner's internal voice, sharing feedback with Sales, Marketing, and Product to strengthen Cycode's channel program.</span></li><li value=\"11\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Maintain accurate forecasting and pipeline reporting in Salesforce.</span></li></ul>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">3+ years of channel sales or partner management experience in cybersecurity</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Strong existing partner relationships across the East Coast, including GuidePoint Security</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Strong relationships with Optiv and Trace3</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Proven track record of meeting or exceeding channel quota</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience recruiting and activating new partners, not only managing an established program</span></li><li value=\"6\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Ability to work cross-functionally with sales, marketing, and leadership teams in a fast-paced environment</span></li><li value=\"7\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Excellent communication and presentation skills, with the ability to engage both partner executives and individual sellers</span></li><li value=\"8\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Self-starter with a high sense of ownership, integrity, and a team-player mindset</span></li><li value=\"9\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Willingness to travel within the territory</span><br><br><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">Advantages:</strong></b></li><li value=\"10\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience in Application Security (AppSec), DevSecOps, or cloud security</span></li><li value=\"11\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience at a growth-stage or mid-sized security vendor</span></li><li value=\"12\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience with structured sales methodologies such as MEDDPICC</span></li><li value=\"13\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience with Salesforce and partner relationship management (PRM) tools</span></li></ul>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "Channel Account Manager - West & Central",
+  "department": "Sales",
+  "email": "cycode.4C.37E@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/channel-account-manager---west--central/4C.37E",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/channel-account-manager---west--central/4C.37E",
+  "url_active_page": "https://cycode.com/careers/position/?pos_id=4C.37E",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "4C.37E",
+  "location": {
+   "name": "Texas (Remote)",
+   "country": "US",
+   "city": "Austin",
+   "state": "TX",
+   "postal_code": "",
+   "street_name": "East 7th Street",
+   "arrival_instructions": null,
+   "street_number": "",
+   "timezone": "America/Chicago",
+   "location_uid": "FD.30E",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://cycode.com/careers/position/?pos_id=4C.37E",
+  "picture_url": null,
+  "time_updated": "2026-11-22T17:53:33Z",
+  "company_name": "Cycode",
+  "is_internal": false,
+  "linkedin_job_posting_id": null,
+  "workplace_type": "Remote",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/A8.00D/positions/4C.37E?token=8AD340E3CBB3CBB22B445680340E22B44568",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">This is a unique opportunity to join a fast-growing cybersecurity company at the forefront of securing AI-driven software development.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Cycode is the leader in agentic development security, with a mission to protect where AI risk is born. Our Agentic Development Security Platform secures the entire software development lifecycle in the age of AI, bringing AI governance, AI code security, software supply chain security, and ASPM together in one connected platform. Powered by Cycode AI and Maestro, our agentic orchestration engine, we help organizations identify real risk, prioritize what matters, and remediate critical vulnerabilities up to 17x faster.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Trusted by Fortune 500 enterprises worldwide, Cycode was named a Leader in the 2026 Gartner® Magic Quadrant™ for Software Supply Chain Security and in the IDC MarketScape for ASPM. Founded in 2019 and backed by leading investors including Insight Partners and YL Ventures, Cycode is building the future of secure, AI-native software development.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">We are looking for a Channel Account Manager (CAM) with a proven track record to join our US sales team and own our channel business across the West &amp; Central regions. This role reports to the Head of Global Channels and is a strategic member of the team.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">As a CAM, you will build and grow Cycode's partner ecosystem in your territory. You will deepen relationships with our key partners, recruit and activate new ones, and turn them into a meaningful, repeatable source of pipeline and revenue. You will work hand in hand with our regional sales teams to drive joint wins, and you will own partner-sourced and partner-influenced revenue in your territory.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">To be successful in this role, you must bring strong, existing relationships with leading security partners in your region. You should be equally comfortable building executive relationships with partner leadership and working side by side with partner sellers on specific opportunities. This is a builder role: you will have real ownership and a direct impact on how Cycode goes to market through partners.</span></p><h3 class=\"editor-heading-h3\"><span style=\"white-space: pre-wrap;\">Key Responsibilities</span></h3><ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Own the channel business in your territory, including partner-sourced pipeline, partner-influenced revenue, and quota attainment.</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Manage and grow relationships with key strategic partners, including GuidePoint Security, Optiv, and Trace3.</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Recruit and onboard new partners, including VARs, MSSPs, and system integrators, with a focus on partners that can drive meaningful AppSec and DevSecOps business.</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Build and execute joint business plans with key partners, including targets, account mapping, marketing activities, and enablement milestones.</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Enable partner sales and technical teams to position, sell, and demo Cycode's platform, including Cycode AI, Maestro, and our agentic workflows.</span></li><li value=\"6\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Build strong seller-to-seller relationships between partner reps and Cycode's regional sales teams, and drive collaboration on account planning and joint opportunities.</span></li><li value=\"7\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Generate net-new pipeline through partner-led campaigns, events, and joint go-to-market activities.</span></li><li value=\"8\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Work closely with Cycode's sales leadership to align on territory strategy, deal registration, and rules of engagement.</span></li><li value=\"9\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Run regular business reviews (QBRs) with partners to track performance, address gaps, and identify growth opportunities.</span></li><li value=\"10\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Act as the voice of the partner internally, bringing feedback to Sales, Marketing, and Product to help strengthen Cycode's channel program.</span></li><li value=\"11\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Maintain accurate forecasting and pipeline reporting in Salesforce.</span></li></ul>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">3+ years of channel sales or partner management experience in cybersecurity</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Strong existing partner relationships across the West &amp; Central regions, including GuidePoint Security</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Strong relationships with Optiv and Trace3</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Proven track record of meeting or exceeding channel quota</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience recruiting and activating new partners, not only managing an established program</span></li><li value=\"6\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Ability to work cross-functionally with sales, marketing, and leadership teams in a fast-paced environment</span></li><li value=\"7\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Excellent communication and presentation skills, with the ability to engage both partner executives and individual sellers</span></li><li value=\"8\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Self-starter with a high sense of ownership, integrity, and a team-player mindset</span></li><li value=\"9\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Willingness to travel within the territory</span><br><br><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">Advantages:</strong></b></li><li value=\"10\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience in Application Security (AppSec), DevSecOps, or cloud security</span></li><li value=\"11\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience at a growth-stage or mid-sized security vendor</span></li><li value=\"12\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience with structured sales methodologies such as MEDDPICC</span></li><li value=\"13\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience with Salesforce and partner relationship management (PRM) tools</span><br></li></ul>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "DevOps Team Lead",
+  "department": "Engineering",
+  "email": "cycode.10.96B@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/devops-team-lead/10.96B",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/devops-team-lead/10.96B",
+  "url_active_page": "https://cycode.com/careers/position/?pos_id=10.96B",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "10.96B",
+  "location": {
+   "name": "Tel Aviv, Israel",
+   "country": "IL",
+   "city": "Tel Aviv-Yafo",
+   "state": "Tel Aviv District",
+   "postal_code": "",
+   "street_name": "12 Leonardo da Vinci Street",
+   "arrival_instructions": "<p>We are located at <span>12 Leonardo da Vinci Street</span>, 8th-floor.<br/></p><p><br/></p><p><br/></p>",
+   "street_number": "45",
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "FD.305",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://cycode.com/careers/position/?pos_id=10.96B",
+  "picture_url": null,
+  "time_updated": "2026-11-22T19:23:33Z",
+  "company_name": "Cycode",
+  "is_internal": false,
+  "linkedin_job_posting_id": null,
+  "workplace_type": "Hybrid",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/A8.00D/positions/10.96B?token=8AD340E3CBB3CBB22B445680340E22B44568",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p>This is a unique opportunity to join a fast-growing cybersecurity company at the forefront of securing AI-driven software development.</p><p>Cycode is redefining how organizations secure software in the age of AI-driven development. Our Agentic Development Security Platform helps enterprises secure the entire software development lifecycle, from prompt to production, through AI governance, deep contextual analysis, and autonomous security.</p><p>Powered by Cycode AI and Maestro, our orchestration engine, we help organizations identify real risks, prioritize actual exposure, and remediate vulnerabilities at AI speed. Trusted by Fortune 500 enterprises worldwide, Cycode is recognized as a market leader in Application Security, Software Supply Chain Security, and ASPM.</p><p>Founded in 2019 and backed by leading investors including Insight Partners and YL Ventures, Cycode is building the future of secure AI-native software development.</p><p>We are looking for a talented and experienced DevOps Team Leader to join our infrastructure team. As the DevOps Team Lead, you will manage and lead the DevOps team. You will provide strong technical skills, enhance operational efficiency, design and implement scalable systems to keep Cycode running smoothly, and support our significant business growth. You will be part of an innovative, high-performance R&amp;D department, working with cutting-edge technologies in a dynamic and agile environment.</p><p>Our technology stack:</p><ul><li>Multi-cloud (AWS, GCP, Azure)</li><li>Kubernetes (Native, GKE, EKS, K3S, AKS)</li><li>Code (Python, Node.js, Go, Bash)</li><li>Databases (MongoDB, ArangoDB, Postgres, Prometheus, BigQuery)</li><li>CI/CD (GitLab CI, CircleCi)</li><li>IaC (Terraform)</li></ul>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul><li>1+ years of experience managing a team of DevOps engineers in an Agile environment</li><li>5+ years of experience as a DevOps Engineer in cloud environment</li><li>Proven production experience with deploying, running, and operating complex, high-availability, and large-scale web applications on AWS Cloud</li><li>Deep expertise in Kubernetes, including different autoscaling strategies</li><li>Terraform hands-on experience</li><li>Proven production experience with monitoring and observability tools such as Grafana and Prometheus</li><li>Deep understanding of scalable distributed systems and microservices architecture patterns</li></ul><p>Nice to have:</p><ul><li>Good understanding and experience with database management</li></ul>",
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "Explore New Opportunities",
+  "department": null,
+  "email": "cycode.99.83B@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/explore-new-opportunities/99.83B",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/explore-new-opportunities/99.83B",
+  "url_active_page": "https://cycode.com/careers/?presscats=",
+  "employment_type": null,
+  "experience_level": null,
+  "uid": "99.83B",
+  "location": {
+   "name": "Anywhere",
+   "country": "IL",
+   "city": "Tel Aviv-Yafo",
+   "state": "Tel Aviv District",
+   "postal_code": "",
+   "street_name": "45 Rothschild Boulevard",
+   "arrival_instructions": null,
+   "street_number": "45",
+   "timezone": "Asia/Jerusalem",
+   "location_uid": "7E.305",
+   "is_remote": false
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://cycode.com/careers/?presscats=",
+  "picture_url": null,
+  "time_updated": "2026-11-22T21:54:21Z",
+  "company_name": "Cycode",
+  "is_internal": false,
+  "linkedin_job_posting_id": null,
+  "workplace_type": "On-site",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/A8.00D/positions/99.83B?token=8AD340E3CBB3CBB22B445680340E22B44568",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p>Don’t see an open position that’s a match to your skill set?</p><p>Submit your resume here to be considered for new opportunities in the future.</p>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": null,
+    "order": 2
+   }
+  ]
+ },
+ {
+  "name": "Technical Account Manager",
+  "department": "CS & Support",
+  "email": "cycode.03.D65@applynow.io",
+  "email_alias": null,
+  "url_comeet_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/technical-account-manager/03.D65",
+  "url_recruit_hosted_page": "https://www.comeet.com/jobs/cycode/A8.00D/technical-account-manager/03.D65",
+  "url_active_page": "https://cycode.com/careers/position/?pos_id=03.D65&pos_title=technical-account-manager",
+  "employment_type": "Full-time",
+  "experience_level": null,
+  "uid": "03.D65",
+  "location": {
+   "name": "Argentina",
+   "country": "AR",
+   "city": "Buenos Aires",
+   "state": "Buenos Aires",
+   "postal_code": "",
+   "street_name": "",
+   "arrival_instructions": null,
+   "street_number": "",
+   "timezone": "America/Buenos_Aires",
+   "location_uid": "C1.606",
+   "is_remote": true
+  },
+  "internal_use_custom_id": null,
+  "is_consent_needed": false,
+  "is_sms_consent_needed": false,
+  "referrals_reward": null,
+  "is_reward": false,
+  "is_company_reward": true,
+  "company_referrals_reward": "",
+  "url_detected_page": "https://cycode.com/careers/position/?pos_id=03.D65&pos_title=technical-account-manager",
+  "picture_url": null,
+  "time_updated": "2026-11-22T18:01:28Z",
+  "company_name": "Cycode",
+  "is_internal": false,
+  "linkedin_job_posting_id": null,
+  "workplace_type": "Remote",
+  "position_url": "https://www.comeet.co/careers-api/2.0/company/A8.00D/positions/03.D65?token=8AD340E3CBB3CBB22B445680340E22B44568",
+  "details": [
+   {
+    "name": "Description",
+    "value": "<p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">This is a unique opportunity to join a fast-growing cybersecurity company at the forefront of securing AI-driven software development.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Cycode is the leader in agentic development security, with a mission to protect where AI risk is born. Our Agentic Development Security Platform secures the entire software development lifecycle in the age of AI, bringing AI governance, AI code security, software supply chain security, and ASPM together in one connected platform. Powered by Cycode AI and Maestro, our agentic orchestration engine, we help organizations identify real risk, prioritize what matters, and remediate critical vulnerabilities up to 17x faster.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">Trusted by Fortune 500 enterprises worldwide, Cycode was named a Leader in the 2026 Gartner® Magic Quadrant™ for Software Supply Chain Security and in the IDC MarketScape for ASPM. Founded in 2019 and backed by leading investors including Insight Partners and YL Ventures, Cycode is building the future of secure, AI-native software development.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">We are looking for a Technical Account Manager (TAM) with a proven track record to join our Customer Success team. This role reports to the Director of Customer Success and is a strategic member of the team.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">As a TAM, you will be the trusted technical advisor for a portfolio of enterprise customers, from mid-sized organizations through Fortune 500 companies. You will own the technical health of each account: guiding deployment and integration across the customer’s development environment, driving adoption of the platform and its AI capabilities, resolving complex technical issues, and turning all of it into measurable security outcomes.</span></p><p class=\"editor-paragraph\"><span style=\"white-space: pre-wrap;\">To be successful in this role, you must have hands-on experience in software development, DevOps, and/or cybersecurity. You must be able to explain technology in both technical and non-technical terms. You should be equally comfortable holding strategic conversations with C-level executives and running technical deep dives with engineers.</span></p><p class=\"editor-paragraph\"><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">Key Responsibilities</strong></b></p><ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Serve as the primary technical point of contact and trusted advisor for a portfolio of enterprise accounts across different industries.</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Lead technical onboarding and deployment. Plan and guide the integration of Cycode with customers’ source control, CI/CD pipelines, cloud environments, ticketing systems, and other tools in their ecosystem to ensure fast time-to-value.</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Own the technical health of your accounts. Monitor configuration, coverage, and usage, and proactively identify gaps, risks, and optimization opportunities.</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Act as the technical escalation point for your customers. Troubleshoot complex issues and drive them to resolution together with Support and R&amp;D.</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Understand each customer’s architecture, security program, pain points, compelling events, and success measures. Build technical success plans that drive adoption, timely renewals, and expansion while minimizing churn.</span></li><li value=\"6\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Drive adoption of Cycode AI, Maestro, and agentic workflows. Help customers put AI-driven prioritization and remediation into practice and govern AI usage across their development lifecycle.</span></li><li value=\"7\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Run regular technical cadences and business reviews (QBRs, EBRs) with security, engineering, and executive stakeholders to continuously demonstrate value and ROI.</span></li><li value=\"8\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Deliver technical enablement and training on how to best administer, configure, and optimize the platform, including policies, workflows, dashboards, and APIs.</span></li><li value=\"9\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Act as the voice of the customer internally. Bring product feedback and feature requests to Product and R&amp;D to help improve our platform and services.</span></li><li value=\"10\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Proactively educate customers on new features and capabilities added to the Cycode platform.</span></li><li value=\"11\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Document each customer’s environment, use cases, configurations, and integrations throughout the customer lifecycle.</span></li><li value=\"12\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Create advocacy and evangelism opportunities for customers.</span></li></ul>",
+    "order": 1
+   },
+   {
+    "name": "Requirements",
+    "value": "<ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">5+ years of experience in technical account management, customer success, or another technical customer-facing role with enterprise software</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">5+ years of experience in the software development and/or cybersecurity industry</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Strong technical background with hands-on experience deploying, integrating, or troubleshooting enterprise software in complex customer environments</span></li><li value=\"4\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Familiarity with Application Security (AppSec) concepts, and experience in cybersecurity preferred</span></li><li value=\"5\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Familiarity with SCM tools such as GitHub, GitLab, and Bitbucket, as well as CI/CD pipelines and REST APIs</span></li><li value=\"6\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Proven project management skills, with experience managing Fortune 500 customers and/or complex technical projects that achieved high customer satisfaction</span></li><li value=\"7\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience managing a portfolio of at least $3M in ARR</span></li><li value=\"8\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Excellent communication and presentation skills, with the ability to explain complex technical topics to both engineers and executives and to build strong, trusted relationships</span></li><li value=\"9\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Strong problem-solving skills, with the ability to identify and address customer needs</span></li><li value=\"10\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">High integrity, a team player ready to help others, and a self-starter with intellectual curiosity</span></li></ul><p class=\"editor-paragraph\"><b><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">Advantages</strong></b></p><ul class=\"editor-list-ul\"><li value=\"1\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Proficiency with modern scripting and programming languages</span></li><li value=\"2\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Working proficiency with Kubernetes</span></li><li value=\"3\" class=\"editor-listitem\"><span style=\"white-space: pre-wrap;\">Experience working with Planhat or a similar Customer Success platform</span></li></ul>",
+    "order": 2
+   }
+  ]
+ }
+]
