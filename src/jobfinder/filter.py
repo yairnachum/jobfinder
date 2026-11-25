@@ -113,7 +113,7 @@ def role_family(title: str) -> str | None:
     return None
 
 
-MAX_YEARS = 1  # "0 years or student" — a 2+ year ask is not junior.
+MAX_YEARS = 2  # Junior territory. 3+ years is mid-level and was the noise.
 
 _UNITS = r"(?:years?|yrs?|שנות|שנים)"
 
@@ -188,6 +188,7 @@ def passes_stage_two(job: Job) -> bool:
     """
     years = required_years(job.description)
     if is_junior(job.title) or is_junior(job.description):
-        # "Junior ... 5+ years" happens; trust the number over the label.
-        return years is None or years <= 2
+        # "Junior ... 5+ years" happens; trust the number over the label,
+        # but give a labelled role one year of slack.
+        return years is None or years <= MAX_YEARS + 1
     return years is not None and years <= MAX_YEARS

@@ -30,7 +30,7 @@ def test_no_duplicate_boards():
 
 def test_profile_defaults():
     p = load_profile("config/profile.yaml")
-    assert p["max_years_experience"] == 3
+    assert p["max_years_experience"] == 2
     assert p["concurrency"] >= 1
 
 

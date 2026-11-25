@@ -60,8 +60,12 @@ def test_rejects_three_plus_years():
     assert passes_stage_two(mk(description="3+ years of experience")) is False
 
 
-def test_rejects_two_plus_years():
-    assert passes_stage_two(mk(description="2+ years of experience")) is False
+def test_accepts_two_years():
+    assert passes_stage_two(mk(description="2+ years of experience")) is True
+
+
+def test_rejects_four_plus_years():
+    assert passes_stage_two(mk(description="4+ years of experience")) is False
 
 
 def test_accepts_one_year():

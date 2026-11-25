@@ -1,5 +1,7 @@
 # Tunables. Edit freely; no code change required.
-max_years_experience: 3
+# Documented here for reference; jobfinder.filter.MAX_YEARS is the
+# authority used at runtime.
+max_years_experience: 2
 state_path: state/seen.jsonl
 seen_max_age_days: 120
 # Max simultaneous outbound HTTP requests.
